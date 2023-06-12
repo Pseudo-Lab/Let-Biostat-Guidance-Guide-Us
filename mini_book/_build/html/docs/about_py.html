@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>About Python &#8212; PseudoLab [Study Name]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/about_py';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Setting up Your Python Environment" href="getting_started.html" />
+    <link rel="prev" title="Scientific Python QuickStart" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">PseudoLab [Study Name]</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">About Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Setting up Your Python Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python_by_example.html">An Introductory Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learn_more.html">Learn More</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GCP.html">Purpose of Good Clinical Practice (GCP)</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/about_py.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>About Python</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-python">What’s Python?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-uses">Common Uses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-popularity">Relative Popularity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-and-design">Syntax and Design</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-programming">Scientific Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="about-python">
+<span id="about-py"></span><h1>About Python<a class="headerlink" href="#about-python" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>“Python has gotten sufficiently weapons grade that we don’t descend
+into R anymore. Sorry, R people. I used to be one of you but we no
+longer descend into R.” – Chris Wiggins</p>
+</div></blockquote>
+<section id="what-s-python">
+<h2>What’s Python?<a class="headerlink" href="#what-s-python" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.python.org">Python</a> is a general-purpose programming
+language conceived in 1989 by Dutch programmer <a class="reference external" href="https://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van
+Rossum</a>.</p>
+<p>Python is free and open source, with development coordinated through the
+<a class="reference external" href="https://www.python.org/psf/">Python Software Foundation</a>.</p>
+<p>Python has experienced rapid adoption in the last decade and is now one
+of the most commonly used programming languages.</p>
+<p>Popular textbooks on Python programming include <span id="id1">[<a class="reference internal" href="#id4" title="John Guttag. Introduction to computation and programming using Python: With application to understanding data. MIT Press, 2016.">Gut16</a>]</span> and <span id="id2">[<a class="reference internal" href="#id5" title="Christian Hill. Learning scientific programming with python. Cambridge University Press, 2016.">Hil16</a>]</span>.</p>
+<section id="common-uses">
+<h3>Common Uses<a class="headerlink" href="#common-uses" title="Permalink to this heading">#</a></h3>
+<p>Python is a general-purpose language used in almost all application domains
+such as</p>
+<ul class="simple">
+<li><p>communications</p></li>
+<li><p>web development</p></li>
+<li><p>CGI and graphical user interfaces</p></li>
+<li><p>game development</p></li>
+<li><p>multimedia, data processing, security, etc., etc., etc.</p></li>
+</ul>
+<p>Python is beginner-friendly and routinely used to teach computer science and
+programming in top computer science programs.</p>
+<p>Python is particularly popular within the scientific and data science
+communities.</p>
+<p>It is steadily <a class="reference external" href="https://news.efinancialcareers.com/us-en/3002556/python-replaced-excel-banking">replacing familiar tools like
+Excel</a>
+in the fields of finance and banking.</p>
+</section>
+<section id="relative-popularity">
+<h3>Relative Popularity<a class="headerlink" href="#relative-popularity" title="Permalink to this heading">#</a></h3>
+<p>The following chart, produced using Stack Overflow Trends, shows one
+measure of the relative popularity of Python</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/python_vs_matlab.png"><img alt="../_images/python_vs_matlab.png" src="../_images/python_vs_matlab.png" style="width: 457.2px; height: 288.0px;" /></a>
+</figure>
+<p>The figure indicates not only that Python is widely used but also that
+adoption of Python has accelerated significantly since 2012.</p>
+<p>This is driven at least in part by uptake in the scientific
+domain, particularly in rapidly growing fields like data science.</p>
+<p>For example, the popularity of <a class="reference external" href="http://pandas.pydata.org/">pandas</a>, a
+library for data analysis with Python has exploded, as seen here.</p>
+<p>(The corresponding time path for MATLAB is shown for comparison)</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/pandas_vs_matlab.png"><img alt="../_images/pandas_vs_matlab.png" src="../_images/pandas_vs_matlab.png" style="width: 474.49px; height: 287.5px;" /></a>
+</figure>
+<p>Note that pandas takes off in 2012, which is the same year that we see
+Python’s popularity begin to spike in the first figure.</p>
+<p>Overall, it’s clear that</p>
+<ul class="simple">
+<li><p>Python is <a class="reference external" href="http://spectrum.ieee.org/computing/software/the-2017-top-programming-languages">one of the most popular programming languages worldwide</a>.</p></li>
+<li><p>Python is a major tool for scientific computing, accounting for a
+rapidly rising share of scientific work around the globe.</p></li>
+</ul>
+</section>
+<section id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this heading">#</a></h3>
+<p>Python is a <a class="reference external" href="https://en.wikipedia.org/wiki/High-level_programming_language">high-level language</a>
+suitable for rapid development.</p>
+<p>It has a relatively small core language supported by many libraries.</p>
+<p>Multiple programming styles are supported (procedural, object-oriented, functional, etc.)</p>
+<p>Python is interpreted rather than compiled.</p>
+</section>
+<section id="syntax-and-design">
+<h3>Syntax and Design<a class="headerlink" href="#syntax-and-design" title="Permalink to this heading">#</a></h3>
+<p>One nice feature of Python is its elegant syntax — we’ll see many
+examples later on.</p>
+<p>Elegant code might sound superfluous but in fact it’s highly beneficial
+because it makes the syntax easy to read and easy to remember.</p>
+<p>Remembering how to read from files, sort dictionaries and other such
+routine tasks means that you don’t need to break your flow in order to
+hunt down correct syntax.</p>
+<p>Closely related to elegant syntax is an elegant design.</p>
+<p>Features like iterators, generators, decorators and list comprehensions
+make Python highly expressive, allowing you to get more done with less
+code.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Namespace">Namespaces</a> improve
+productivity by cutting down on bugs and syntax errors.</p>
+</section>
+</section>
+<section id="scientific-programming">
+<h2>Scientific Programming<a class="headerlink" href="#scientific-programming" title="Permalink to this heading">#</a></h2>
+<p>Python has become one of the core languages of scientific computing.</p>
+<p>It’s either the dominant player or a major player in</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://scikit-learn.org/stable/">machine learning and data science</a></p></li>
+<li><p><a class="reference external" href="http://www.astropy.org/">astronomy</a></p></li>
+<li><p><a class="reference external" href="https://wiki.python.org/moin/PythonForArtificialIntelligence">artificial intelligence</a></p></li>
+<li><p><a class="reference external" href="http://chemlab.github.io/chemlab/">chemistry</a></p></li>
+<li><p><a class="reference external" href="http://biopython.org/wiki/Main_Page">computational biology</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/meteorology/">meteorology</a></p></li>
+</ul>
+<p>Its popularity in economics is also beginning to rise.</p>
+</section>
+<section id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id3">
+<div class="citation" id="id4" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Gut16</a><span class="fn-bracket">]</span></span>
+<p>John Guttag. <em>Introduction to computation and programming using Python: With application to understanding data</em>. MIT Press, 2016.</p>
+</div>
+<div class="citation" id="id5" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">Hil16</a><span class="fn-bracket">]</span></span>
+<p>Christian Hill. <em>Learning scientific programming with python</em>. Cambridge University Press, 2016.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Scientific Python QuickStart</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="getting_started.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Setting up Your Python Environment</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-python">What’s Python?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-uses">Common Uses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relative-popularity">Relative Popularity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syntax-and-design">Syntax and Design</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-programming">Scientific Programming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
