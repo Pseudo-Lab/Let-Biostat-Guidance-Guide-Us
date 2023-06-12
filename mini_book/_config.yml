@@ -1,16 +1,17 @@
-title: PseudoLab [Study Name]
+title: PseudoLab [Let-Biostat-Guidance-Guide-Us]
 author: PseudoLab
 logo: 'PseudoLab_logo.png'
 
 # Short description about the book
 description: >-
-  A brief introduction to Python programming for scientific applications.
+  A Introduction to Biostat Guidance.
 
 execute:
   execute_notebooks           : cache
 
 # HTML-specific settings
 html:
+  favicon: 'PseudoLab_logo.png'
   home_page_in_navbar         : false
 
 # Interact link settings
