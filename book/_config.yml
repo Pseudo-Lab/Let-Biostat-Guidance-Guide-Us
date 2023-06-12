@@ -1,14 +1,14 @@
-title : Let Biostat Guidance Guide Us
-author: Let Biostat Guidance Guide Us Team
+title: PseudoLab [Let Biostat Guidance Guide Us]
+author: PseudoLab
 logo: 'PseudoLab_logo.png'
 
 # Short description about the book
 description: >-
-  A brief introduction to Biostat Guidance
+  Introduction to Biostat Guidance
 
 execute:
   execute_notebooks           : off
-
+  
 # HTML-specific settings
 html:
   home_page_in_navbar         : false
@@ -18,15 +18,13 @@ notebook_interface            : "notebook"
 
 # Launch button settings
 repository:
-  url                         : https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us
-  path_to_book                : "mini_book"
-
+  url: https://github.com/pseudo-lab/Let-Biostat-Guidance-Guide-Us
+  path_to_book: "book" 
+  
 html:
-    favicon: 'PseudoLab_logo.png'
-    use_issues_button: true
-    use_repository_button: true
-exclude_patterns: [draft/*]
-
+  favicon: 'PseudoLab_logo.png'
+  use_issues_button: true
+  use_repository_button: true
 binder:
   binderhub_url               : "https://mybinder.org"
   text                        : "Launch binder"
@@ -38,3 +36,4 @@ latex:
   latex_engine                : "xelatex"
   latex_documents:
     targetname: book.tex
+exclude_patterns: [draft/*]
