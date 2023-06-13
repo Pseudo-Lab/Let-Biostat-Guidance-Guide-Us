@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>An Introductory Example &#8212; PseudoLab [Study Name]</title>
+    <title>An Introductory Example &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
   
   
   
@@ -64,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/python_by_example';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Learn More" href="learn_more.html" />
@@ -133,17 +134,31 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="index.html">
+<a class="navbar-brand logo" href="../intro.html">
   
   
   
   
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
-    <p class="title logo__title">PseudoLab [Study Name]</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Jupyter Book Template for PseudoLab
+                </a>
+            </li>
+        </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="about_py.html">About Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Setting up Your Python Environment</a></li>
@@ -194,6 +209,53 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/python_by_example.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -378,63 +440,7 @@ more about Python.</p>
 in the notebook if you run it on your own machine.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span>\<span class="n">ipykernel_31052</span>\<span class="mf">352233182.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
-
-<span class="nn">~\anaconda3\envs\jb-dev\lib\site-packages\IPython\core\interactiveshell.py</span> in <span class="ni">run_line_magic</span><span class="nt">(self, magic_name, line, _stack_depth)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2416</span>                 <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;local_ns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_local_scope</span><span class="p">(</span><span class="n">stack_depth</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2417</span>             <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">builtin_trap</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2418</span>                 <span class="n">result</span> <span class="o">=</span> <span class="n">fn</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2419</span>             <span class="k">return</span> <span class="n">result</span>
-<span class="g g-Whitespace">   </span><span class="mi">2420</span> 
-
-<span class="nn">~\anaconda3\envs\jb-dev\lib\site-packages\decorator.py</span> in <span class="ni">fun</span><span class="nt">(*args, **kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>             <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span>                 <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">232</span>             <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">233</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__name__</span>
-<span class="g g-Whitespace">    </span><span class="mi">234</span>     <span class="n">fun</span><span class="o">.</span><span class="vm">__doc__</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="vm">__doc__</span>
-
-<span class="nn">~\anaconda3\envs\jb-dev\lib\site-packages\IPython\core\magic.py</span> in <span class="ni">&lt;lambda&gt;</span><span class="nt">(f, *a, **k)</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span>     <span class="c1"># but it&#39;s overkill for just that one bit of state.</span>
-<span class="g g-Whitespace">    </span><span class="mi">186</span>     <span class="k">def</span> <span class="nf">magic_deco</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">187</span>         <span class="n">call</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">f</span><span class="p">,</span> <span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="o">**</span><span class="n">k</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">188</span> 
-<span class="g g-Whitespace">    </span><span class="mi">189</span>         <span class="k">if</span> <span class="nb">callable</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
-
-<span class="nn">~\anaconda3\envs\jb-dev\lib\site-packages\IPython\core\magics\pylab.py</span> in <span class="ni">matplotlib</span><span class="nt">(self, line)</span>
-<span class="g g-Whitespace">     </span><span class="mi">97</span>             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available matplotlib backends: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">backends_list</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">98</span>         <span class="k">else</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">99</span>             <span class="n">gui</span><span class="p">,</span> <span class="n">backend</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shell</span><span class="o">.</span><span class="n">enable_matplotlib</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">100</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_show_matplotlib_backend</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">gui</span><span class="p">,</span> <span class="n">backend</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">101</span> 
-
-<span class="nn">~\anaconda3\envs\jb-dev\lib\site-packages\IPython\core\interactiveshell.py</span> in <span class="ni">enable_matplotlib</span><span class="nt">(self, gui)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3632</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">3633</span><span class="s2">         from IPython.core import pylabtools as pt</span>
-<span class="ne">-&gt; </span><span class="mi">3634</span><span class="s2">         from matplotlib_inline.backend_inline import configure_inline_support</span>
-<span class="g g-Whitespace">   </span><span class="mi">3635</span><span class="s2">         gui, backend = pt.find_gui_and_backend(gui, self.pylab_gui_select)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3636</span><span class="s2"> </span>
-
-<span class="s2">~</span><span class="se">\a</span><span class="s2">naconda3\envs\jb-dev\lib\site-packages\matplotlib_inline\__init__.py in &lt;module&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span><span class="s2"> from . import backend_inline, config  # noqa</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s2"> __version__ = &quot;0.1.6&quot;  # noqa</span>
-
-<span class="s2">~</span><span class="se">\a</span><span class="s2">naconda3\envs\jb-dev\lib\site-packages\matplotlib_inline</span><span class="se">\b</span><span class="s2">ackend_inline.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> # Distributed under the terms of the BSD 3-Clause License.</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> </span>
-<span class="ne">----&gt; </span><span class="mi">6</span><span class="s2"> import matplotlib</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> from matplotlib import colors</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> from matplotlib.backends import backend_agg</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 </pre></div>
 </div>
 </div>
@@ -445,7 +451,7 @@ in the notebook if you run it on your own machine.</p>
 <p id="ourfirstprog">Here are a few lines of code that perform the task we set</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">ϵ_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -473,14 +479,14 @@ syntax <code class="docutils literal notranslate"><span class="pre">np.attribute
 <p>Here’s two more examples</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -488,7 +494,7 @@ syntax <code class="docutils literal notranslate"><span class="pre">np.attribute
 <p>We could also use the following syntax:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span>
 
 <span class="n">numpy</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
@@ -538,7 +544,7 @@ package.</p>
 <p>Recall this code that we saw above</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
@@ -548,7 +554,7 @@ package.</p>
 <p>Here’s another way to access NumPy’s square root function</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">sqrt</span>
 
 <span class="n">sqrt</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
@@ -568,7 +574,7 @@ they wish to.</p>
 lines after the import statements are</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ϵ_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ϵ_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ϵ_values</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -596,7 +602,7 @@ semantics in a familiar setting.</p>
 <p>Here’s a version that illustrates <code class="docutils literal notranslate"><span class="pre">for</span></code> loops and Python lists.</p>
 <div class="cell docutils container" id="firstloopprog">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts_length</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ts_length</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">ϵ_values</span> <span class="o">=</span> <span class="p">[]</span>   <span class="c1"># empty list</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ts_length</span><span class="p">):</span>
@@ -631,7 +637,7 @@ objects.</p>
 <p>For example, try</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -646,14 +652,14 @@ and the third is a <a class="reference external" href="https://en.wikipedia.org/
 <code class="docutils literal notranslate"><span class="pre">list_name.append(some_value)</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>
 <span class="n">x</span>
 </pre></div>
 </div>
@@ -672,21 +678,21 @@ etc.</p></li>
 <p>Another useful list method is <code class="docutils literal notranslate"><span class="pre">pop()</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -695,14 +701,14 @@ etc.</p></li>
 element is referenced by <code class="docutils literal notranslate"><span class="pre">x[0]</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># first element of x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># first element of x</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>   <span class="c1"># second element of x</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>   <span class="c1"># second element of x</span>
 </pre></div>
 </div>
 </div>
@@ -715,7 +721,7 @@ element is referenced by <code class="docutils literal notranslate"><span class=
 was</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ts_length</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ts_length</span><span class="p">):</span>
     <span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">()</span>
     <span class="n">ϵ_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
@@ -734,7 +740,7 @@ telling Python that this line marks the lower limit of the code block.</p>
 a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;bird&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;bird&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">animal</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The plural of &quot;</span> <span class="o">+</span> <span class="n">animal</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="n">animal</span> <span class="o">+</span> <span class="s2">&quot;s&quot;</span><span class="p">)</span>
 </pre></div>
@@ -793,7 +799,7 @@ remember:</p>
 a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop instead.</p>
 <div class="cell docutils container" id="whileloopprog">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts_length</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ts_length</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">ϵ_values</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">ts_length</span><span class="p">:</span>
@@ -829,7 +835,7 @@ generated by <a class="reference internal" href="#equation-ilom">(1)</a>.</p>
 NumPy array.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="mf">0.025</span>         <span class="c1"># interest rate</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="mf">0.025</span>         <span class="c1"># interest rate</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">50</span>            <span class="c1"># end date</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># an empty NumPy array, to store all b_t</span>
 <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>         <span class="c1"># initial balance</span>
@@ -872,7 +878,7 @@ standard normal.</p>
 <p>In your solution, restrict your import statements to</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 </pre></div>
 </div>
@@ -920,14 +926,14 @@ branching and conditions.</p>
 and 1 for each nonnegative number</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -947,7 +953,7 @@ function to compute the absolute value.</p>
 <p>Use no imports besides</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -971,7 +977,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <p>Here’s one solution.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -990,7 +996,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <h3>Exercise 2<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α_values</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">α_values</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.98</span><span class="p">]</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 
@@ -1012,7 +1018,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <p>Here’s one solution:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1032,7 +1038,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <p>Here’s one way:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1053,7 +1059,7 @@ landing in <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
 <p>Here’s a shorter way to write the same thing:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">α</span> <span class="o">=</span> <span class="mf">0.9</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">T</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1082,7 +1088,7 @@ dividing by <span class="math notranslate nohighlight">\(r^2 = (1/2)^2 = 1/4\)</
 fraction that falls into the circle.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">100000</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">100000</span>
 
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>

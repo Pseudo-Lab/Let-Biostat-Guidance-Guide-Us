@@ -1,4 +1,5 @@
-file: intro
+format: jb-article
+root: intro
 sections:
 - file: docs/about_py
 - file: docs/getting_started
