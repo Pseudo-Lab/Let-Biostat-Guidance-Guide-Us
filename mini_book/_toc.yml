@@ -2,4 +2,3 @@ format: jb-article
 root: intro
 sections:
 - file: docs/GCP
-- file: docs/test
