@@ -1,3 +1,3 @@
-# Jupyter Book Template for PseudoLab
+# Let Biostat Guidance Guide Us (LBGGU)
 
-가짜연구소 자료 정리를 위한 Jupyter Book Template 입니다. 
+임상시험 가이드라인을 공부하는 모임입니다. 주로 통계 분야에 집중하여 공부하고 있습니다.
