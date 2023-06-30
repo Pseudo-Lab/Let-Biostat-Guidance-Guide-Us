@@ -2,3 +2,4 @@ format: jb-article
 root: intro
 sections:
 - file: docs/GCP
+- file: docs/GCP_part2.md
