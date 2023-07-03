@@ -3,3 +3,4 @@ root: intro
 sections:
 - file: docs/GCP
 - file: docs/GCP_part2
+- file: docs/E9_part2
