@@ -1,4 +1,4 @@
-# 
+# Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 1
 
 **진단 검사를 평가하는 연구 결과의 보고에 대한 통계적 지침**
 

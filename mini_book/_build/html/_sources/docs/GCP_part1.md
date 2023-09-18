@@ -1,8 +1,4 @@
----
-title: "GCP E6_R2 Part1"
----
-
-## Good Clinical Practice (GCP)
+## Good Clinical Practice (GCP) part 1
 
 GCP의 목적은 두 가지이다. 첫째는 시험자를 보호하는 것 (human subject protection)이고, 신뢰할 수 있는 임상시험 결과(reliability of trial results)를 만드는 것이다 (2.13.).
 

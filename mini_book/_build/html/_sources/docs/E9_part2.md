@@ -1,3 +1,5 @@
+## Guideline for Industry E9 Statistical Principles for Clinical Trials part 2
+
 # 5. Data Analysis Considerations
 
 Statistical Analysis Plan (SAP, 통계분석계획서)는 프로토콜이 완성되고나서 작성되어야 한다. 그리고 blind review가 끝나고 다시 검토되어야 한다.

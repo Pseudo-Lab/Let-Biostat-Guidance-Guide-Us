@@ -1,6 +1,4 @@
-# 
-
-# **DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomized controlled trial 리뷰**
+# DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomized controlled trial part 1
 
 https://lh4.googleusercontent.com/pno7K44oyUgCTg8M6IuAgTSCyqV_GWwY1Cx8Oky6SMjnzEgzQlLYdtP3wmXBmjnLOttizR_SfRkzN6T6mUumMsJDvsBlhFmfW8o0mZnuFJ8qiCD_57m-8NDlrzAEeStdHL64lusoLoBWIP7t1jdtHbk
 

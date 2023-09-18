@@ -1,6 +1,5 @@
----
-title: "Guideline for Industry E9 Statistical Principles for Clinical Trials"
----
+## Guideline for Industry E9 Statistical Principles for Clinical Trials part 1
+
 
 # 1. INTRODUCTION
 

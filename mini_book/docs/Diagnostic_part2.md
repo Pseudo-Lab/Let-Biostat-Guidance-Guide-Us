@@ -1,4 +1,4 @@
-# ****Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff****
+# Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 2
 
 # 5. Reporting Recommendations : 권장사항 보고
 

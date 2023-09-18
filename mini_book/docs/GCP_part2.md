@@ -1,6 +1,4 @@
----
-title: "GCP E6_R2 Part2"
----
+## Good Clinical Practice (GCP) part 2
 
 목차
 
