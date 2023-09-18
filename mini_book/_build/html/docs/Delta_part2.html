@@ -1,0 +1,741 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2 &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Delta_part2';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="" href="Diagnostic_part1.html" />
+    <link rel="prev" title="" href="Delta_part1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Let Biostat Guidance Guide Us (LBGGU)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GCP_part1.html">Good Clinical Practice (GCP)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="GCP_part2.html">6. Clinical trial protocol and protocol amendment(s)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part1.html">1. INTRODUCTION</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part2.html">5. Data Analysis Considerations</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Switching.html">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part1.html"></a></li>
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part2.html"><strong><strong>Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff</strong></strong></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part1.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part2.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/Delta_part2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Delta_part2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specifying-the-target-difference-for-a-randomised-controlled-trial"><strong>Specifying the target difference for a randomised controlled trial</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-1-delta-recommended-reporting-items-for-the-sample-size-calculation-of-a-randomised-controlled-trial-with-a-superiority-question">Table 1. DELTA recommended reporting items for the sample size calculation of a randomised controlled trial with a superiority question</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-items">Core Items</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-items-for-grant-application-and-trial-protocol">Additional items for grant application and trial protocol</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-item-for-trail-results-paper">Additional item for trail results paper</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-the-sample-size-calculation"><strong>Reporting the sample size calculation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#box2-methods-that-inform-what-is-an-important-difference">Box2: Methods that inform what is an important difference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-an-important-difference">Methods that inform what is an important difference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-a-realistic-difference">Methods that inform what is a realistic difference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-an-important-or-a-realistic-difference">Methods that inform what is an important or a realistic difference</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="delta2-guidance-on-choosing-the-target-difference-and-undertaking-and-reporting-the-sample-size-calculation-for-a-randomised-controlled-trial-part2">
+<h1>DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2<a class="headerlink" href="#delta2-guidance-on-choosing-the-target-difference-and-undertaking-and-reporting-the-sample-size-calculation-for-a-randomised-controlled-trial-part2" title="Permalink to this heading">#</a></h1>
+<p>목차</p>
+<section id="specifying-the-target-difference-for-a-randomised-controlled-trial">
+<h2><strong>Specifying the target difference for a randomised controlled trial</strong><a class="headerlink" href="#specifying-the-target-difference-for-a-randomised-controlled-trial" title="Permalink to this heading">#</a></h2>
+<p>box1, table1 참고</p>
+<p>Two different approaches can be taken to specify the target difference for a randomised controlled trial.</p>
+<ul class="simple">
+<li><p>Important to one or more stakeholder groups</p></li>
+<li><p>Realistic (plausible), based on either existing evidence, or expert opinion.</p></li>
+</ul>
+<p>It has been argued that a target difference should always be both important and realistic, which would seem particularly apt when designing a definitive (phase 3) superiority randomised controlled trial.</p>
+</section>
+<section id="table-1-delta-recommended-reporting-items-for-the-sample-size-calculation-of-a-randomised-controlled-trial-with-a-superiority-question">
+<h2>Table 1. DELTA recommended reporting items for the sample size calculation of a randomised controlled trial with a superiority question<a class="headerlink" href="#table-1-delta-recommended-reporting-items-for-the-sample-size-calculation-of-a-randomised-controlled-trial-with-a-superiority-question" title="Permalink to this heading">#</a></h2>
+<section id="core-items">
+<h3>Core Items<a class="headerlink" href="#core-items" title="Permalink to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Primary outcome</strong></p></li>
+<li><p><strong>Statistical significance and power</strong></p></li>
+<li><p>Express the target difference according to outcome type</p>
+<ul>
+<li><p>Binary</p>
+<p>state the target difference as an absolute or relative effect (or both), along with the intervention and control group proportions</p>
+<p>※ if both an absolute and a relative difference are provided, clarify if either takes primacy in terms of the sample size calculation</p>
+</li>
+<li><p>Continuous</p>
+<p>state the target mean difference as the natural scale, common standard deviation, and standardised effect size</p>
+<div class="math notranslate nohighlight">
+\[
+        effect\ size = {\mu_{difference} \over {\sigma}}
+        \]</div>
+</li>
+<li><p>Time-to-event</p>
+<p>state the target difference as an absolute or relative difference (or both); provide 4 things</p>
+<ul class="simple">
+<li><p>the control group event proportion</p></li>
+<li><p>planned length of follow-up</p></li>
+<li><p>intervention and control group survival distributions</p></li>
+<li><p>accrual time</p></li>
+</ul>
+<p>※ if both an absolute and a relative difference are provided, clarify if either takes primacy in terms of the sample size calculation</p>
+</li>
+</ul>
+</li>
+<li><p>Allocation ratio</p></li>
+</ol>
+<ul class="simple">
+<li><p>Sample size based on the assumptions as per above</p>
+<ul>
+<li><p>if standard binary, continuous, or survival outcome formulas are not used → the formula/sample size calculation approach</p></li>
+<li><p>a time- to-event outcome → the number of events required should be stated</p></li>
+<li><p>any adjustments that alter the required sample size (allowance for loss to follow-up, multiple testing) → be specified, referenced, and justified along with the final sample size</p></li>
+<li><p>alternative designs → additional input should be stated and justified</p></li>
+<li><p>Provide details of any assessment of the sensitivity of the sample size</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="additional-items-for-grant-application-and-trial-protocol">
+<h3>Additional items for grant application and trial protocol<a class="headerlink" href="#additional-items-for-grant-application-and-trial-protocol" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Underlying basis used for specifying the target difference</p></li>
+<li><p>Explain the choice of target difference</p></li>
+</ul>
+</section>
+<section id="additional-item-for-trail-results-paper">
+<h3>Additional item for trail results paper<a class="headerlink" href="#additional-item-for-trail-results-paper" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>reference the trial protocol</p></li>
+</ul>
+</section>
+</section>
+<section id="reporting-the-sample-size-calculation">
+<h2><strong>Reporting the sample size calculation</strong><a class="headerlink" href="#reporting-the-sample-size-calculation" title="Permalink to this heading">#</a></h2>
+<p>Under the conventional approach with a standard trial designs &amp; unadjusted statistical analysis, the core items:</p>
+<ul class="simple">
+<li><p>primary outcome</p></li>
+<li><p>the target difference (appropriately specified according to the outcome type)</p></li>
+<li><p>the associated nuisance parameter (uniquely specifies the difference on the original outcome scale)</p></li>
+<li><p>the statistical significance and power</p></li>
+<li><p>++) design이 더 복잡하다면 추가적인 input을 포함할 수도 있음 (ex. cluster randomized design을 위한 클러스터 간 상관관계)</p></li>
+</ul>
+</section>
+<section id="box2-methods-that-inform-what-is-an-important-difference">
+<h2>Box2: Methods that inform what is an important difference<a class="headerlink" href="#box2-methods-that-inform-what-is-an-important-difference" title="Permalink to this heading">#</a></h2>
+<section id="methods-that-inform-what-is-an-important-difference">
+<h3>Methods that inform what is an important difference<a class="headerlink" href="#methods-that-inform-what-is-an-important-difference" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>Anchor</p>
+<ul class="simple">
+<li><p>The outcome of interest can be anchored by using either a patient’s or health professional’s judgment to define what an important difference is.</p></li>
+</ul>
+</li>
+<li><p>Distribution</p>
+<ul class="simple">
+<li><p>A common approach is to use a value that is larger than the inherent imprecision in the measurement and therefore likely to represent a minimal level needed for a noticeable difference.</p></li>
+<li><p><strong><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081748/">A Distribution-based Method for Assessing The Differences between Clinical Trial Target Populations and Patient Populations in Electronic Health Records</a></strong></p></li>
+</ul>
+</li>
+<li><p>Health economic</p>
+<ul class="simple">
+<li><p>compare cost with health outcomes</p></li>
+<li><p>define a threshold value for the cost of a unit of health effect that a decision maker is willing to pay</p></li>
+<li><p>to estimate the overall incremental net benefit of one treatment versus the comparator</p></li>
+<li><p>a (bayesian) decision-theoretic value of information analysis</p></li>
+</ul>
+</li>
+<li><p>Standardised effect size</p>
+<ul>
+<li><p><a class="reference external" href="https://statisticsbyjim.com/basics/cohens-d/">Cohen’s D</a></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d = {{\mu_{groupA} - \mu_{groupB}\over{\sigma}}}\)</span></p></li>
+</ul>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Cohen’s d</p></th>
+<th class="head"><p>Indicates Mean Difference</p></th>
+<th class="head"><p>Effect Size</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.2</p></td>
+<td><p></p></td>
+<td><p>Small</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.5</p></td>
+<td><p>Half <span class="math notranslate nohighlight">\(\sigma\)</span></p></td>
+<td><p>Medium</p></td>
+</tr>
+<tr class="row-even"><td><p>0.8</p></td>
+<td><p></p></td>
+<td><p>Large</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Equal to <span class="math notranslate nohighlight">\(\sigma\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Twice <span class="math notranslate nohighlight">\(\sigma\)</span></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>Cohen’s cutoff points approximate odds ratios of 1.44, 2.48, and 4.27, respectively.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="methods-that-inform-what-is-a-realistic-difference">
+<h3>Methods that inform what is a realistic difference<a class="headerlink" href="#methods-that-inform-what-is-a-realistic-difference" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://blog.naver.com/happymedicalwriter/220480068851">Pilot study</a></p>
+<ul>
+<li><p>A pilot (or preliminary) study may be carried out if there is little evidence, or even experience, to guide expectations and determine an appropriate target difference for the trial.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="methods-that-inform-what-is-an-important-or-a-realistic-difference">
+<h3>Methods that inform what is an important or a realistic difference<a class="headerlink" href="#methods-that-inform-what-is-an-important-or-a-realistic-difference" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Opinion seeking</p>
+<ul>
+<li><p>based on opinions elicited from health professionals, patients, or others.</p></li>
+</ul>
+</li>
+<li><p>Review of evidence base</p>
+<ul>
+<li><p>Ideally, this evidence would be from a systematic review or meta-analysis of randomised controlled trials.</p></li>
+<li><p>In the absence of randomised evidence, evidence from observational studies could be used in a similar manner</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="discussion">
+<h2>Discussion<a class="headerlink" href="#discussion" title="Permalink to this heading">#</a></h2>
+<p>“The key message for researchers is the need to be more explicit about the rationale and justification of the target difference when undertaking and reporting a sample size calculation. Increasing focus is being placed on the target difference in the clinical interpretation of the trial result, whether statistically significant or not. Therefore, the specification and reporting of the target difference, and other aspects of the sample size calculation, needs to be improved.”</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Delta_part1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Diagnostic_part1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specifying-the-target-difference-for-a-randomised-controlled-trial"><strong>Specifying the target difference for a randomised controlled trial</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-1-delta-recommended-reporting-items-for-the-sample-size-calculation-of-a-randomised-controlled-trial-with-a-superiority-question">Table 1. DELTA recommended reporting items for the sample size calculation of a randomised controlled trial with a superiority question</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#core-items">Core Items</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-items-for-grant-application-and-trial-protocol">Additional items for grant application and trial protocol</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-item-for-trail-results-paper">Additional item for trail results paper</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-the-sample-size-calculation"><strong>Reporting the sample size calculation</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#box2-methods-that-inform-what-is-an-important-difference">Box2: Methods that inform what is an important difference</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-an-important-difference">Methods that inform what is an important difference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-a-realistic-difference">Methods that inform what is a realistic difference</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods-that-inform-what-is-an-important-or-a-realistic-difference">Methods that inform what is an important or a realistic difference</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion">Discussion</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

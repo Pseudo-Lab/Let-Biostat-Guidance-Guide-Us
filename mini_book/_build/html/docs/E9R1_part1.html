@@ -1,0 +1,689 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/E9R1_part1';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS" href="E9R1_part2.html" />
+    <link rel="prev" title="Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff" href="Diagnostic_part2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Let Biostat Guidance Guide Us (LBGGU)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GCP_part1.html">Good Clinical Practice (GCP)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="GCP_part2.html">6. Clinical trial protocol and protocol amendment(s)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part1.html">1. INTRODUCTION</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part2.html">5. Data Analysis Considerations</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="Switching.html">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part1.html"></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part2.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part2.html"><strong><strong>Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff</strong></strong></a></li>
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part2.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/E9R1_part1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/E9R1_part1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-and-scope-a-1">1. PURPOSE AND SCOPE (A.1)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-framework-to-align-planning-design-conduct-analysis-and-interpretation-a-2">2. A FRAMEWORK TO ALIGN PLANNING, DESIGN, CONDUCT, ANALYSIS AND INTERPRETATION (A.2)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimands-a-3">3. ESTIMANDS (A.3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-intercurrent-events-to-be-reflected-in-the-clinical-question-of-interest-a-3-1">A. Intercurrent Events to be Reflected in the Clinical Question of Interest (A.3.1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-strategies-for-addressing-intercurrent-events-when-defining-the-clinical-question-of-interest-a-3-2">B. Strategies for Addressing Intercurrent Events when Defining the Clinical Question of Interest (A.3.2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-estimand-attributes-a-3-3">C. Estimand Attributes (A.3.3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-considerations-for-constructing-an-estimand-a-3-4">D. Considerations for Constructing an Estimand (A.3.4)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e">E. 참고 영상</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="e9-r1-statistical-principles-for-clinical-trials-addendum-estimands-and-sensitivity-analysis-in-clinical-trials">
+<h1>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS<a class="headerlink" href="#e9-r1-statistical-principles-for-clinical-trials-addendum-estimands-and-sensitivity-analysis-in-clinical-trials" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="purpose-and-scope-a-1">
+<h1>1. PURPOSE AND SCOPE (A.1)<a class="headerlink" href="#purpose-and-scope-a-1" title="Permalink to this heading">#</a></h1>
+<ul>
+<li><p>E9(R1): Addendum의 목적 : 구조화된 프레임워크를 제시함으로서 아래 사항들을 보완</p>
+<ul class="simple">
+<li><p>임상시험의 목표(objectives), 디자인(design), 수행(conduct), 분석(analysis), 해석(interpretation)</p></li>
+<li><p>치료 효과(treatment effect) 또는 관심 효과(effects of interest)에 대한 의뢰사와 규제기관(regulator)간의 소통</p></li>
+</ul>
+</li>
+<li><p>본 문서(Addendum)은 ICH E9의 확장본으로 아래의 사항들에 대해서 다룸.</p></li>
+<li><p>민감도 분석</p></li>
+<li><p>Intention-To-Treat(ITT) 원칙을 항상 따라야 하는가?</p>
+<ul>
+<li><p>ITT 원칙</p>
+<p>무작위 배정된 모든 대상자를 처음 무작위 배정된 치료군에 속한 것으로 간주하며, 계획된 순응 여부에 관계없이 임상시험 종료까지 추적 관찰하여 평가되고 분석되어야 한다는 원칙</p>
+</li>
+</ul>
+<p>즉, ITT 원칙과 가장 유사한 FAS(Full Analysis Set)이나 PPS(Per-Protocol set)은 언제 사용되는지</p>
+</li>
+<li><p>Data handling과 결측치(missing data) 관련</p>
+<ol class="arabic simple">
+<li><p>Discontinuation(중도탈락)과 Study withdrawal(연구 동의철회)의 구분</p></li>
+<li><p>다양한 Intercurrent events가 존재 → 어떻게 결측치를 처리할 것인지</p></li>
+</ol>
+<ul class="simple">
+<li><p>Intercurrent events: 무작위 배정 이후 무작위화된 치료의 과정을 변경하는 사건 (ex: Treatment discontinuation, Use of additonal medication, Modification of background / concomitatnt therapy, Switching to another treatment, Death or other relevant outcome(surgery, progression)</p></li>
+</ul>
+</li>
+<li><p>Analysis Set 관련: Full Analysis Set (FAS) 와 Per Protocol Set (PP set)</p></li>
+<li><p>Robustness 관련 → Sensitivity Analysis</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="a-framework-to-align-planning-design-conduct-analysis-and-interpretation-a-2">
+<h1>2. A FRAMEWORK TO ALIGN PLANNING, DESIGN, CONDUCT, ANALYSIS AND INTERPRETATION (A.2)<a class="headerlink" href="#a-framework-to-align-planning-design-conduct-analysis-and-interpretation-a-2" title="Permalink to this heading">#</a></h1>
+<p><img alt="" src="../_images/E9R1_1_pic1.png" /></p>
+<ul class="simple">
+<li><p>Estimand(Target of Estimation) : 통계적 추론 추정으로 나오는 추정치가 아닌 임상시험의 목적과 관련된 최종적인 목표 → xx인 조건(선정/제외기준, 분석군 등등)에서 시험약이 대조약과 비교하여 베이스라인 대비 xx 시점 이후에 SBP 수치가 더 감소했다.</p></li>
+<li><p>Estimator(Method of estimation) → SBP의 변화량을 가지고 비교(ANCOVA, LS Mean.. )</p></li>
+<li><p>Estimate(Numeric result)</p></li>
+<li><p>Sensitivity Analysis : 기존 임상시험에 대한 통계분석의 원칙을 위배하지 않는 범위에서 Imputation, Simulation 등을 통해서 확인 (ex: 결측지 대체 방법을 적용한 결과와 적용하지 않은 결과를 비교)</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="estimands-a-3">
+<h1>3. ESTIMANDS (A.3)<a class="headerlink" href="#estimands-a-3" title="Permalink to this heading">#</a></h1>
+<section id="a-intercurrent-events-to-be-reflected-in-the-clinical-question-of-interest-a-3-1">
+<h2>A. Intercurrent Events to be Reflected in the Clinical Question of Interest (A.3.1)<a class="headerlink" href="#a-intercurrent-events-to-be-reflected-in-the-clinical-question-of-interest-a-3-1" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Treatment effect를 설명할 때, Intercurrent events를 고려해야 한다.</p></li>
+<li><p>EX: 두명의 대상자가 처음에는 같은 약을 처방 받았다가, 한 대상자가 중간에 다른 약을 처방 받은 경우</p></li>
+<li><p>결측치와는 다르게, Intercurrent event는 임상시험에서 피해야 할 단점으로 간주되어서는 안됨.</p></li>
+<li><p>Estimands를 구성할 때, Intercurrent event를 고려해야 함 (Intercurrent event가 중도탈락의 원인이 될 수 있기 때문)</p></li>
+</ul>
+</section>
+<section id="b-strategies-for-addressing-intercurrent-events-when-defining-the-clinical-question-of-interest-a-3-2">
+<h2>B. Strategies for Addressing Intercurrent Events when Defining the Clinical Question of Interest (A.3.2)<a class="headerlink" href="#b-strategies-for-addressing-intercurrent-events-when-defining-the-clinical-question-of-interest-a-3-2" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>Treatment Policy Strategy</p>
+<ul class="simple">
+<li><p>ICE 발생 여부와 관계없이 실제 값 사용하는 방법.</p></li>
+<li><p>처음 무작위 배정된 치료군과 수정된 치료군의 효과가 결합되어 있음.</p></li>
+<li><p>ICE가 발생했을 때, 완벽하게 Follow up이 되면 좋지, 결측치가 발생하는 경우가 있음.</p></li>
+</ul>
+</li>
+<li><p>Hypothetical Strategies</p>
+<ul class="simple">
+<li><p>Question에 답 하는 것이 목적.</p></li>
+<li><p>EX: Qusetion - ICE가 발생하지 않으면 무슨 일이 발생하나?</p></li>
+<li><p>해당 전략을 사용하기에는 필요 조건들이 많고, 가정을 증명할 수 없는 경우가 있음.</p></li>
+<li><p>결측치 대체 시 MAR (include likelihood-based methods) 방법을 이용 (ex: MMRM(Mixed effect Models for Repeated Measures) → Modeling</p></li>
+</ul>
+</li>
+<li><p>Composite Variable Strategies</p>
+<ul class="simple">
+<li><p>ICE 자체가 의미가 있는 경우, ICE와 관심 변수의 정의를 통합(ex: death)</p></li>
+<li><p>근본적인 clinical questions을 변경(ex: 병에 대한 효과 평가 vs 병에 대한 생존률(death))</p></li>
+<li><p>분석을 할 때, ICE를 고려할 수 있는 분석 방법을 이용(ex: ANOVA or ANCOVA 분석을 할 때, BOCF(Best Observation Carried Forward) 방법 사용)</p></li>
+</ul>
+</li>
+<li><p>While-on-Treatment Strategies</p>
+<ul class="simple">
+<li><p>ICE 발생 시점까지의 정보를 사용하는 경우(ex: 생존 기간,  death를 ICE로 고려.)</p></li>
+</ul>
+</li>
+<li><p>Principal Stratum Strategies</p>
+<ul class="simple">
+<li><p>어느 군(treatment)인지 상관 없이, ICE 상태가 동일한 집단(population)에 대해서 분석</p></li>
+</ul>
+<p>→ 치료약 A, B를 비교하는 것이 아닌, ICE 상태에 따라 비교(추가 약물을 투여한 집단 vs 추가 약물을 투여하지 않은 집단)</p>
+<ul class="simple">
+<li><p>Subgroup analysis 로 진행하는 것이 아닌, statistical modeling으로 진행</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="c-estimand-attributes-a-3-3">
+<h2>C. Estimand Attributes (A.3.3)<a class="headerlink" href="#c-estimand-attributes-a-3-3" title="Permalink to this heading">#</a></h2>
+<p>관심 있는 Treatment effect를 정의하기 위한 estimand의 구성 요소</p>
+<ul>
+<li><p>Treatment</p>
+<p>처음 무작위 배정 후 치료약이 변경 없이 임상이 진행되었는지?</p>
+<p>치료약의 추가나 변경이 허용되는지?</p>
+</li>
+<li><p>Population</p>
+<p>선정/제외 기준을 만족한 모든 대상자를 대상으로 할 것인지?</p>
+<p>Baseline characteristic에 따라 subgroup을 정의할 것인지?</p>
+<p>Principal stratum 전략을 고려할 것인지?</p>
+</li>
+<li><p>Variable</p>
+<p>측정 시점(마지막 측정 시점 포함, 4주, 8주, 12주…)은 어떻게 정할 것인지?</p>
+<p>ICE 발생이 있을 때 허용할 것인지, 아닌지</p>
+</li>
+<li><p>Strategies for ICEs</p>
+<p>모든 관련된 ICE들을 동일하게 볼 것인지</p>
+<p>ICE 관련해서 어떤 전략을 사용할 것인지</p>
+</li>
+<li><p>Population-level Summary</p>
+<p>치료군들을 어떤 방법으로 비교할 것인지?(mean difference, risk difference, odds ration…)</p>
+</li>
+</ul>
+</section>
+<section id="d-considerations-for-constructing-an-estimand-a-3-4">
+<h2>D. Considerations for Constructing an Estimand (A.3.4)<a class="headerlink" href="#d-considerations-for-constructing-an-estimand-a-3-4" title="Permalink to this heading">#</a></h2>
+<p>Estimand 생성 시 아래의 사항들을 고려할 필요가 있음</p>
+<ul class="simple">
+<li><p>Clinical contest(대체 의약품 사용 가능 여부)</p></li>
+<li><p>Administration of treatment(one-off dosing, short term dosing..)</p></li>
+<li><p>Goal of treatment(prevention, disease modification, symptom control)</p></li>
+<li><p>신뢰할 수  있는 치료 효과(Treatment effect) 추정치를 도출할 수 있는지 여부</p></li>
+<li><p>관심 있는 Clinical question을 해결하는 치료법을 명확하게 이해하는 것이 중요 - 미리 ICE에 대한 내용 반영이 가능(backgroup therapy로 B를 미리 설정)</p></li>
+<li><p>Treatment Policy strategy 을 사용할 때, Characterizing 방법이 도움이 되는 경우가 있</p></li>
+</ul>
+</section>
+<section id="e">
+<h2>E. 참고 영상<a class="headerlink" href="#e" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=CdT_EbwPNFA">https://www.youtube.com/watch?v=CdT_EbwPNFA</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Diagnostic_part2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong><strong>Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff</strong></strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="E9R1_part2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-and-scope-a-1">1. PURPOSE AND SCOPE (A.1)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-framework-to-align-planning-design-conduct-analysis-and-interpretation-a-2">2. A FRAMEWORK TO ALIGN PLANNING, DESIGN, CONDUCT, ANALYSIS AND INTERPRETATION (A.2)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#estimands-a-3">3. ESTIMANDS (A.3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-intercurrent-events-to-be-reflected-in-the-clinical-question-of-interest-a-3-1">A. Intercurrent Events to be Reflected in the Clinical Question of Interest (A.3.1)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-strategies-for-addressing-intercurrent-events-when-defining-the-clinical-question-of-interest-a-3-2">B. Strategies for Addressing Intercurrent Events when Defining the Clinical Question of Interest (A.3.2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-estimand-attributes-a-3-3">C. Estimand Attributes (A.3.3)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-considerations-for-constructing-an-estimand-a-3-4">D. Considerations for Constructing an Estimand (A.3.4)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e">E. 참고 영상</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

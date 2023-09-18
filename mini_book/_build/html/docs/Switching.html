@@ -1,0 +1,843 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Points to Consider on Switching between Superiority and Non-inferiority &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Switching';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="" href="Delta_part1.html" />
+    <link rel="prev" title="5. Data Analysis Considerations" href="E9_part2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Let Biostat Guidance Guide Us (LBGGU)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GCP_part1.html">Good Clinical Practice (GCP)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="GCP_part2.html">6. Clinical trial protocol and protocol amendment(s)</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part1.html">1. INTRODUCTION</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part2.html">5. Data Analysis Considerations</a></li>
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part1.html"></a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part2.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part1.html"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part2.html"><strong><strong>Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff</strong></strong></a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part1.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part2.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/Switching.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/Switching.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Points to Consider on Switching between Superiority and Non-inferiority</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-introduction">I. Introduction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">시험군(신약) VS 대조군(활성 대조군) 비교 유형</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">유형 간 전환</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">본 문서의 설정</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-trial-objectives">II. Trial Objectives</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">도식비교</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-relevance-of-pre-definition">III. Relevance of Pre-definition</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">사전 정의가 필요한 이유</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-switching-the-objective-of-the-comparison">IV. Switching the Objective of the Comparison</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-interpreting-a-non-inferiority-trial-as-a-superiority-trial">IV.1 Interpreting a non-inferiority trial as a superiority trial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-1-appropriateness-of-comparator">IV.1.1 Appropriateness of Comparator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-2-power-calculation">IV.1.2 Power calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-3-size-of-additional-clinical-benefit">IV.1.3 Size of additional clinical benefit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-4-choice-of-analysis-set">IV.1.4 Choice of analysis set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-5-trial-quality">IV.1.5 Trial quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-6-conclusion">IV.1.6 Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-interpreting-a-superiority-trial-as-a-non-inferiority-trial">IV.2 Interpreting a superiority trial as a non-inferiority trial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-1-appropriateness-of-comparator-doses-patient-population-and-endpoints">IV.2.1 Appropriateness of comparator, doses, patient population and endpoints</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-2-power-calculation">IV.2.2 Power calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-3-choice-of-analysis-set">IV.2.3 Choice of analysis set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-4-trial-quality">IV.2.4 Trial quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-5-conclusion">IV.2.5 Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v-changing-the-equivalence-margins">V. Changing the Equivalence Margins</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-discussion">VI. Discussion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vii-overall-conclusion">VII. Overall Conclusion</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="points-to-consider-on-switching-between-superiority-and-non-inferiority">
+<h1>Points to Consider on Switching between Superiority and Non-inferiority<a class="headerlink" href="#points-to-consider-on-switching-between-superiority-and-non-inferiority" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="i-introduction">
+<h1>I. Introduction<a class="headerlink" href="#i-introduction" title="Permalink to this heading">#</a></h1>
+<section id="vs">
+<h2>시험군(신약) VS 대조군(활성 대조군) 비교 유형<a class="headerlink" href="#vs" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>신약의 우월성(superiority)</p></li>
+<li><p>신약의 비열등성(non-inferioriy)</p></li>
+<li><p>두 군의 동등성(equivalence)</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2>유형 간 전환<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>우월성 평가시험 → 비열등성</p></li>
+<li><p>비열등성 평가시험 → 우월성</p></li>
+<li><p>동등성 평가시험 → 더 좁은 구간의 동등성</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>본 문서의 설정<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>단일 일차 평가변수를 사용하는 유효성 시험 관점</p></li>
+<li><p>우월성, 비열등성, 동등성 문제</p></li>
+<li><p>시험 목적(우월성/비열등성/동등성)을 변경해도 일차 평가변수의 정의는 변경되지 않는다고 가정</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="ii-trial-objectives">
+<h1>II. Trial Objectives<a class="headerlink" href="#ii-trial-objectives" title="Permalink to this heading">#</a></h1>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>비교 목적 유형</p></th>
+<th class="head"><p>Superiority trial</p></th>
+<th class="head"><p>Equivalence trial</p></th>
+<th class="head"><p>Non-inferiority trial</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>목적</p></td>
+<td><p>신약 치료군과 대조약 치료군 간 임상적 효과의 차이를 확인</p></td>
+<td><p>신약 치료군과 대조약 치료군 간 임상적 효과에 유의한 차이가 없음을 확인</p></td>
+<td><p>주로 3상 임상시험에서 신약이 표준 치료보다 효과가 작지 않음을 확인 (동등하거나 비슷한 효과가 있음)</p></td>
+</tr>
+<tr class="row-odd"><td><p>유의성 검정</p></td>
+<td><p>p-value 확인</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>p-value가 작을수록 차이가 크다</p></li>
+<li><p>두 평균은 5% 유의 수준(p&lt;0.05)에서 유의하게 다르다. | 신뢰구간 주로 사용 | 열등성 확인 시 사용 |
+| 신뢰 구간 및
+허용 한계(Δ) | - 효과 차이에 대한 95% 양측 신뢰 구간은 0을 포함하지 않는다.</p></li>
+</ul>
+<p>허용 한계(Δ) 없음 → 통계적 유의성이 있더라고 임상적 유의성이 없을 수 있다.
+(우월성 임상시험에서 검정력을 계산하는 것도 임상적 유의성을 나타내지 않을 수 있기 때문에 중요하지 않을 수 있다.) | - 효과 차이에 대한 95% 양측 신뢰 구간은 -Δ~+Δ 사이에 있어야 한다.
+(동등성 마진은 0에 대해 비대칭적일 수도 있다) | - 효과 차이에 대한 95% 양측 신뢰 구간이 -Δ의 오른쪽에 있어야 한다.
+|</p>
+<section id="id3">
+<h2>도식비교<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>신뢰구간: 95% 양측 신뢰 구간</p></li>
+<li><p>왼쪽: 대조군의 효과가 높음 / 오른쪽: 치료군의 효과가 높음 (μT−μC)</p></li>
+<li><p>Δ: 임상적으로 허용 가능한 가장 큰 차이값</p></li>
+</ul>
+<p><img alt="" src="../_images/significance_confidence.png" /></p>
+<p><img alt="" src="../_images/analysis_equivalence.png" /></p>
+<p><img alt="" src="../_images/analysis_noninferiority.png" /></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="iii-relevance-of-pre-definition">
+<h1>III. Relevance of Pre-definition<a class="headerlink" href="#iii-relevance-of-pre-definition" title="Permalink to this heading">#</a></h1>
+<section id="id4">
+<h2>사전 정의가 필요한 이유<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>대조군의 치료법, 용량, 대상자, 평가변수가 적절한지 확인하기 위하여</p></li>
+<li><p>적절한 검정력 계산에 의거한 표본 크기 추정을 위하여</p></li>
+<li><p>동등성 및 비열등성의 기준이 사전 정의되었는지 확인하기 위하여</p></li>
+<li><p>프로토콜에 적절한 분석 계획이 기술되었음을 확인하기 위하여</p></li>
+<li><p>시험이 시험 목적을 달성하기에 충분한 민감도(sensitivity)를 가지고 있는지 확인하기 위하여</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="iv-switching-the-objective-of-the-comparison">
+<h1>IV. Switching the Objective of the Comparison<a class="headerlink" href="#iv-switching-the-objective-of-the-comparison" title="Permalink to this heading">#</a></h1>
+<section id="iv-1-interpreting-a-non-inferiority-trial-as-a-superiority-trial">
+<h2>IV.1 Interpreting a non-inferiority trial as a superiority trial<a class="headerlink" href="#iv-1-interpreting-a-non-inferiority-trial-as-a-superiority-trial" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>통계적으로 a simple closed test procedure(단순한 닫힌 검정 절차)에 해당하기 때문에 통계적 다중성(statistical muliplicity)에 문제가 없다.</p></li>
+</ul>
+<ul class="simple">
+<li><p>다중성 문제란 동일한 데이터로 여러 개의 가설을 동시에 검정하는 경우 발생할 수 있는 문제로 이를 해결하기 위한 통계적 절차 중 하나가 Simple closed test procedure이다. 다양한 유의수준에 대해 가설 검정을 하여 오류가 낮출 수 있도록 유의 수준을 조정하는 것. (?)</p></li>
+</ul>
+<ul class="simple">
+<li><p>다만, 이상 사례의 증가로 신약 치료군과 대조약 치료군 간의 안전성 정보에 차이가 있다면 유효성이 안전성 문제 보다 효과의 크기가 큰지 평가하는 것이 중요하다.</p></li>
+</ul>
+<p><img alt="" src="../_images/treatment_difference.png" /></p>
+<section id="iv-1-1-appropriateness-of-comparator">
+<h3>IV.1.1 Appropriateness of Comparator<a class="headerlink" href="#iv-1-1-appropriateness-of-comparator" title="Permalink to this heading">#</a></h3>
+<p>대조군이 치료의 유효성을 보여주기 위해</p>
+<ul class="simple">
+<li><p>잘 통제되어야 한다.</p></li>
+<li><p>‘대조군에 대한 우월성’에 대한 개념이 통계적 유의성 측면에서 명확하게 정의되어야 한다.</p></li>
+</ul>
+</section>
+<section id="iv-1-2-power-calculation">
+<h3>IV.1.2 Power calculation<a class="headerlink" href="#iv-1-2-power-calculation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>비열등성시험은 신약의 약간의 열등성의 가능성이라도 배제하기 위해 큰 규모로 진행된다.</p></li>
+<li><p>신약이 약간이라도 대조군보다 우월한 경우, 비열등성 시험의 검정력은 증가한다.</p></li>
+<li><p>실제로 더 큰 규모의 임상시험 계획이 필요할 수도 있다.</p></li>
+<li><p>그러나 임상시험이 완료되면 신뢰구간에 의한 시험의 결과는 어떠한 검정력 계산이라도 대체할 수 있을 만큼 정밀한 결과가 도출된다.</p></li>
+</ul>
+</section>
+<section id="iv-1-3-size-of-additional-clinical-benefit">
+<h3>IV.1.3 Size of additional clinical benefit<a class="headerlink" href="#iv-1-3-size-of-additional-clinical-benefit" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>비열등성 시험의 대조군은 유효성이 확인된 약제로 선정되기 때문에 대조군보다 우월한 약제은 플라시보(무치료)에 비해서는 우월하다는 것을 의미한다.</p></li>
+<li><p>신약의 우월성 → 플라시보(무치료)&lt;활성 대조군&lt;신약</p></li>
+<li><p>따라서 이상반응 등 Risk가 큰 경우를 제외하면 추가적인 Benfit에 대해 정의할 필요가 없다.</p></li>
+<li><p>그러나 대조군의 우월성을 나타내는 proposed license가 있다면 임상적 용어로 추가적인 임상적 Benefit에 대해 논의되어야 한다.</p></li>
+</ul>
+</section>
+<section id="iv-1-4-choice-of-analysis-set">
+<h3>IV.1.4 Choice of analysis set<a class="headerlink" href="#iv-1-4-choice-of-analysis-set" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>우월성 시험: **ITT(intention-to-treat) 원칙에 따른 FAS(full analysis set)**에 PP(per protocol)를 부수적으로 사용</p></li>
+<li><p>비열등성 시험: FAS와 PP의 중요도를 동등하게 설정, 비슷한 결론이 나오는지 확인하여 타당성 평가</p></li>
+<li><p>비교 목적을 전환하는 경우 이러한 상대적인 중요도를 고려해야한다.</p></li>
+</ul>
+</section>
+<section id="iv-1-5-trial-quality">
+<h3>IV.1.5 Trial quality<a class="headerlink" href="#iv-1-5-trial-quality" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>동등성이나 비열등성을 나타내는 임상시험은 프로토콜의 계획에 높은 수준으로 일치해야 한다.</p></li>
+<li><p>프로토콜 위반(약물 투여 방법, 선정 기준, 측정 방법 등)은 임상시험의 민감도를 감소시키며 차이가 없다는 결론을 나타낸다는 경향성이 있다.</p></li>
+<li><p>이러한 프로토콜 위반과 관련된 Bias의 크기를 측정하는 방법은 알려져있지 않고, 임상시험 해석을 불가능하게 만들 수도 있다.</p></li>
+<li><p>두 치료군이 효과가 없는 경우(부적절한 처방 등의 이유로)에도 차이를 입증하지 못할 수 있다.</p></li>
+<li><p>우월성 시험에서는 우월성(차이)가 입증되면 민감도가 동시에 입증된다.</p></li>
+<li><p>이러한 이유로 비열등성에서 우월성으로 전환하는 것은 결론에 대한 신뢰도를 높일 수 있다.</p></li>
+</ul>
+</section>
+<section id="iv-1-6-conclusion">
+<h3>IV.1.6 Conclusion<a class="headerlink" href="#iv-1-6-conclusion" title="Permalink to this heading">#</a></h3>
+<p>다음의 경우 비열등성 시험에서 열등성 시험으로 전환하는 것이 가능하다.</p>
+<ul class="simple">
+<li><p>임상시험이 적절히 설계되었고, 비열등성 시험 요구 조건을 엄격히 따르는 경우</p></li>
+<li><p>p-value가 우월성에 대한 근거를 독립적으로 평가할 수 있도록 제시되는 경우</p></li>
+<li><p>ITT원칙에 따른 분석에 중요도를 높게 둔 경우</p></li>
+</ul>
+</section>
+</section>
+<section id="iv-2-interpreting-a-superiority-trial-as-a-non-inferiority-trial">
+<h2>IV.2 Interpreting a superiority trial as a non-inferiority trial<a class="headerlink" href="#iv-2-interpreting-a-superiority-trial-as-a-non-inferiority-trial" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>우월성 임상시험에서 치료군 간의 유의한 차이가 없음 →  비열등성 시험</p></li>
+<li><p>우월성 시험일지라도 -Δ를 프로토콜에 사전에 정의해두면 나중에 -Δ를 설정해야하는 어려움(객관적인 근거 부족 등)을 피할 수 있다.</p></li>
+<li><p>약물 효과를 확인하기에 충분한 민감성이 있는지 미리 설계시에 관심을 가지는 것이 좋다.</p></li>
+<li><p>비열등성 시험에서는 활성 대조군이 유효성에 대한 근거로 적절하지 않아 플라시보를 이용하는 경우가 있다는 점을 알아야 한다.</p></li>
+<li><p>우월성에서 비열등성 시험으로의 전환이 통계적 다중성(statistical multiplicity) 문제 자체는 없어 보여도 Δ의 사후정의와 관련된 어려움이 있다.</p></li>
+</ul>
+<p><img alt="" src="../_images/treatment_difference2.png" /></p>
+<section id="iv-2-1-appropriateness-of-comparator-doses-patient-population-and-endpoints">
+<h3>IV.2.1 Appropriateness of comparator, doses, patient population and endpoints<a class="headerlink" href="#iv-2-1-appropriateness-of-comparator-doses-patient-population-and-endpoints" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>우월성 시험에서 정의된 대조군은 비열등성 시험의 결과에 적절하지 않을 수 있다.</p></li>
+<li><p>따라서 대조군이 재현 가능한 효과가 있는 유효한 치료제라는 일관된 증거를 보여주고 치료하지 않는 것보다 유효하다는 것이 입증된 고도로 통제된 우월성 시험의 데이터가 있는지 확인해야 한다.</p></li>
+<li><p>현재 임상시험에서도 동일한 효과가 있을 것으로 예상하는 합리적인 근거가 있어야 한다.</p></li>
+<li><p>예를 들어, 환자 모집단과 평가변수가 비슷해야 한다.</p></li>
+</ul>
+</section>
+<section id="iv-2-2-power-calculation">
+<h3>IV.2.2 Power calculation<a class="headerlink" href="#iv-2-2-power-calculation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>신뢰구간에 의한 결과는 시험 전 수행된 검정력 계산을 대체할 수 있을만큼 명확하다.</p></li>
+<li><p>비열등성 시험에서 합의된 기준에 따른 신뢰구간의 하한치 비열등성 판단에 중요한 영향을 미친다.</p></li>
+</ul>
+</section>
+<section id="iv-2-3-choice-of-analysis-set">
+<h3>IV.2.3 Choice of analysis set<a class="headerlink" href="#iv-2-3-choice-of-analysis-set" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>우월성 시험: ITT(intention-to-treat) 원칙에 따른 FAS(full analysis set)에 PP(per protocol)를 부수적으로 사용</p></li>
+<li><p>비열등성 시험: <strong>FAS와 PP의 중요도를 동등하게 설정</strong>, 비슷한 결론이 나오는지 확인하여 타당성 평가</p></li>
+<li><p>비교 목적을 전환하는 경우 이러한 상대적인 중요도를 고려해야한다.</p></li>
+</ul>
+</section>
+<section id="iv-2-4-trial-quality">
+<h3>IV.2.4 Trial quality<a class="headerlink" href="#iv-2-4-trial-quality" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>동등성이나 비열등성을 나타내는 임상시험은 프로토콜의 계획에 높은 수준으로 일치해야 한다.</p></li>
+<li><p>프로토콜 위반(약물 투여 방법, 선정 기준, 측정 방법 등)은 임상시험의 민감도를 감소시키며 차이가 없다는 결론을 나타낸다는 경향성이 있다.</p></li>
+<li><p>이러한 프로토콜 위반과 관련된 Bias의 크기를 측정하는 방법은 알려져있지 않고, 임상시험 해석을 불가능하게 만들 수도 있다.</p></li>
+<li><p>두 치료군이 효과가 없는 경우(부적절한 처방 등의 이유로)에도 차이를 입증하지 못할 수 있다.</p></li>
+<li><p>우월성 시험에서는 우월성(차이)가 입증되면 민감도가 동시에 입증된다.</p></li>
+<li><p>이러한 이유로 우월성에서 비열등성으로 전환하는 것은 결론에 대한 신뢰도가 떨어질 가능성이 높다.</p></li>
+</ul>
+<p>따라서 시험의 민감성을 입증하기 위해 아래에 주의를 기울여야 한다.</p>
+<ul class="simple">
+<li><p>직접 또는 간접적으로 대조군 치료법이 유효성을 입증할 증거를 찾을 것</p></li>
+<li><p>대조군의 유효성을 입증한 선행 연구와 비교할 것</p></li>
+<li><p>특히 이전 임상시험과 비교할 수 있는 환자 및 데이터의 부적합 수준과 손실 수준을 입증할 것</p></li>
+<li><p>FAS군과 PP군의 결과가 유사함을 보여줄 것</p></li>
+</ul>
+</section>
+<section id="iv-2-5-conclusion">
+<h3>IV.2.5 Conclusion<a class="headerlink" href="#iv-2-5-conclusion" title="Permalink to this heading">#</a></h3>
+<p>다음의 경우 비열등성 시험에서 열등성 시험으로 전환하는 것이 가능하다.</p>
+<ul class="simple">
+<li><p>비열등성 마진(-∆)가 사전 정의되거나 사후에 정당화 된 경우(후자의 경우 일반적으로 인정된 값이 있는 경우에 한정)</p></li>
+<li><p>열등성에 대한 귀무 가설에 대한 신뢰구간과 유의 수준을 보여주는 ITT원칙에 따른 분석과 PP 분석군은 유사한 결과를 제공하는 경우</p></li>
+<li><p>시험은 비열등성 시험의 요구 조건을 엄격히 준수하여 설계된 경우</p></li>
+<li><p>시험의 민감도가 차이가 있는 경우 차이가 있다고 판단하기에 충분히 큰 경우</p></li>
+<li><p>대조군의 유효성을 나타내는 직간접적 근거가 있는 경우</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="v-changing-the-equivalence-margins">
+<h1>V. Changing the Equivalence Margins<a class="headerlink" href="#v-changing-the-equivalence-margins" title="Permalink to this heading">#</a></h1>
+<p>동등성 시험에서 시험 결과에 따른 신뢰 구간은 결과를 잘 요약한 것이다. 동등성 마진을 설정하는 것은 Bias의 영향을 받기 쉽기 때문에 측정된 데이터가 아닌 외부 정보(ex. regulatory requirement)를 근거로 선택되어야만 한다.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="vi-discussion">
+<h1>VI. Discussion<a class="headerlink" href="#vi-discussion" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>이 문서는 단일 일차 변수의 활성 대조군에 대한 유효성 임상시험의 관점에서 쓰여졌다. 실제 연구에서는 하나 이상의 일차 변수를 사용하고 대부분의 연구에서 이차 평가변수를 사용한다. 대조군 비교 목적 전환 시 각각의 변수는 우월성과 비열등성에 대해 각각의 결론을 도출하게 된다.</p></li>
+<li><p>이 문서의 개념은 특정 안전성 평가변수에 대해서도 사전 정의된 활성 대조군에 대한 주요 평가변수라면 동일하게 적용된다.</p></li>
+<li><p>플라시보에 대한 비열등성이 안전성 평가 변수에 대해 중요한 자료라 할지라도, 실제로 비교 목적 변환의 문제는 플라시보 임상시험과 관련이 없다.</p></li>
+<li><p>비열등성과 우월성이 모두 잠재적 값에 대한 결과라는 것을 알고 시험을 전향적으로 설계함으로써 목표를 전환하지 않아야 한다. 특히 통계적 분석은 순차적인 절차에 따라 비열등성에서 우월성으로 진행되어야 한다.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="vii-overall-conclusion">
+<h1>VII. Overall Conclusion<a class="headerlink" href="#vii-overall-conclusion" title="Permalink to this heading">#</a></h1>
+<p>우월성 시험을 비열등성 시험으로 해석하거나 그 반대로 해석하는 것은 시험 결과를 시험군과 대조군 간의 차이에 대한 신뢰 구간으로 접근하는 것이 가장 좋다. 이 신뢰구간을 두 경우에 사용할 때에 근본적인 문제는 없다. 잘 설계되고 시행된 시험의 경우, 비열등성에서 우월성으로 전환 시 어려움이 거의 없다. 그러나 결과 우월성에서 비열등성으로 전환하는 경우 마진을 설정하고 이에 대한 근거를 마련해야 한다는 어려움이 있다.</p>
+<p>해석 단계에서 마진에 대한 대안과 관련하여 결론을 검토할 때, 동등성 마진이 더 넓은 범위로 변경되어야 하면 문제가 생길 수 있지만 더 좁은 동등성 마진을 만족하는 데이터는 안전하게 해석될 수 있다.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="E9_part2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">5. Data Analysis Considerations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Delta_part1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#i-introduction">I. Introduction</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vs">시험군(신약) VS 대조군(활성 대조군) 비교 유형</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">유형 간 전환</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">본 문서의 설정</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ii-trial-objectives">II. Trial Objectives</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">도식비교</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iii-relevance-of-pre-definition">III. Relevance of Pre-definition</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">사전 정의가 필요한 이유</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-switching-the-objective-of-the-comparison">IV. Switching the Objective of the Comparison</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-interpreting-a-non-inferiority-trial-as-a-superiority-trial">IV.1 Interpreting a non-inferiority trial as a superiority trial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-1-appropriateness-of-comparator">IV.1.1 Appropriateness of Comparator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-2-power-calculation">IV.1.2 Power calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-3-size-of-additional-clinical-benefit">IV.1.3 Size of additional clinical benefit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-4-choice-of-analysis-set">IV.1.4 Choice of analysis set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-5-trial-quality">IV.1.5 Trial quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-1-6-conclusion">IV.1.6 Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-interpreting-a-superiority-trial-as-a-non-inferiority-trial">IV.2 Interpreting a superiority trial as a non-inferiority trial</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-1-appropriateness-of-comparator-doses-patient-population-and-endpoints">IV.2.1 Appropriateness of comparator, doses, patient population and endpoints</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-2-power-calculation">IV.2.2 Power calculation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-3-choice-of-analysis-set">IV.2.3 Choice of analysis set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-4-trial-quality">IV.2.4 Trial quality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iv-2-5-conclusion">IV.2.5 Conclusion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#v-changing-the-equivalence-margins">V. Changing the Equivalence Margins</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vi-discussion">VI. Discussion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vii-overall-conclusion">VII. Overall Conclusion</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,6 +1,14 @@
 format: jb-article
 root: intro
 sections:
-- file: docs/GCP
+- file: docs/GCP_part1
 - file: docs/GCP_part2
+- file: docs/E9_part1
 - file: docs/E9_part2
+- file: docs/Switching
+- file: docs/Delta_part1
+- file: docs/Delta_part2
+- file: docs/Diagnostic_part1
+- file: docs/Diagnostic_part2
+- file: docs/E9R1_part1
+- file: docs/E9R1_part2

@@ -305,12 +305,12 @@ Sponsor는 원시 데이터 및 문서들에 대한 직접 접근을 제공함�
 
 ### 7.4 Appendix 1:
 
-![Guideline for good clinical practice E6(R2) EMA/CHMP/ICH/135/1995](../pics/[GCP]IB_title_page_example.png)
+![Guideline for good clinical practice E6(R2) EMA/CHMP/ICH/135/1995](../pics/GCP_IB_title_page_example.png)
 *그림1. IB title page example[\^1]*
 
 ### 7.5 Appendix 2:
 
-![Guideline for good clinical practice E6(R2) EMA/CHMP/ICH/135/1995](../pics/[GCP]IB_table_of_contents_example.png)
+![Guideline for good clinical practice E6(R2) EMA/CHMP/ICH/135/1995](../pics/GCP_IB_table_of_contents_example.png)
 *그림2. IB table of contents example[\^1]*
 
 [\^1]: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-guideline-good-clinical-practice-e6r2-step-5_en.pdf
