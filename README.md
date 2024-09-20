@@ -2,8 +2,8 @@
 
 가짜연구소에서 임상시험 가이드라인을 공부하는 모임입니다. 주로 통계 분야에 집중하여 공부하였습니다.
 
-깃허브 링크
-https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us
+자료 링크
+https://pseudo-lab.github.io/Let-Biostat-Guidance-Guide-Us/intro.html
 
 도움이 되었다면 깃허브 스타를 눌러주세요!
 
