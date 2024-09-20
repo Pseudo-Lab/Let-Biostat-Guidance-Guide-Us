@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Good Clinical Practice (GCP) part 1 &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/GCP_part1';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Good Clinical Practice (GCP) part 2" href="GCP_part2.html" />
+    <link rel="prev" title="Let Biostat Guidance Guide Us (LBGGU)" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="PseudoLab [Let-Biostat-Guidance-Guide-Us] - Home"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="PseudoLab [Let-Biostat-Guidance-Guide-Us] - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Let Biostat Guidance Guide Us (LBGGU)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Good Clinical Practice (GCP) part 1</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="GCP_part2.html">Good Clinical Practice (GCP) part 2</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part1.html">Guideline for Industry E9 Statistical Principles for Clinical Trials part 1</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part2.html">Guideline for Industry E9 Statistical Principles for Clinical Trials part 2</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Switching.html">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part1.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomized controlled trial part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Delta_part2.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part1.html">Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part2.html">Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 2</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part1.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 1</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part2.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/GCP_part1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/GCP_part1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Good Clinical Practice (GCP) part 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Good Clinical Practice (GCP) part 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-of-helsinki">Declaration of Helsinki</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-principles"><strong>GENERAL PRINCIPLES</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks-and-benefits"><strong>Risks and Benefits</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerable-groups-and-individuals"><strong>Vulnerable Groups and Individuals</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-requirements-and-research-protocols"><strong>Scientific Requirements and Research Protocols</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-ethics-committees"><strong>Research Ethics Committees</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacy-and-confidentiality"><strong>Privacy and Confidentiality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#informed-consent"><strong>Informed Consent</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-placebo"><strong>Use of Placebo</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#other-safety-guidance">Other Safety Guidance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-structure-of-clinical-trial">The Structure of Clinical Trial</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irb-institutional-review-board">IRB (Institutional Review Board)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-independent-ethics-committee">IEC (Independent Ethics Committee)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irb-iec">IRB / IEC</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#investigator">Investigator</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="good-clinical-practice-gcp-part-1">
+<h1>Good Clinical Practice (GCP) part 1<a class="headerlink" href="#good-clinical-practice-gcp-part-1" title="Permalink to this heading">#</a></h1>
+<p>GCP의 목적은 두 가지이다. 첫째는 시험자를 보호하는 것 (human subject protection)이고, 신뢰할 수 있는 임상시험 결과(reliability of trial results)를 만드는 것이다 (2.13.).</p>
+<p><img alt="" src="../_images/GCP.PNG" />
+<img alt="" src="../_images/Sponsor.PNG" /></p>
+<p>첫째 시험자를 보호하는 것은 <a class="reference external" href="https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/">헬싱키 선언</a>에 기초한다. 헬싱키 선언에 나타난 내용 중 GCP와 관련된 내용을 위주로 작성하였다.</p>
+</section>
+<section id="declaration-of-helsinki">
+<h1>Declaration of Helsinki<a class="headerlink" href="#declaration-of-helsinki" title="Permalink to this heading">#</a></h1>
+<section id="general-principles">
+<h2><strong>GENERAL PRINCIPLES</strong><a class="headerlink" href="#general-principles" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>환자의 건강을 최우선으로 생각한다.</p></li>
+<li><p>의학 연구는 피험자를 존중하고 그들의 건강과 권리를 지키는 가운데 이루어져야 한다.</p></li>
+<li><p>의학 연구의 목적은 새로운 지식을 얻기 위함이지만, 이 목적이 피험자의 권리와 이익보다 우선할 수 없다.</p></li>
+<li><p>국가 혹은 국제의 법적 또는 규제 요구는 헬싱키 선언에 나타난 보호사항을 줄이거나 제거해서는 안된다.</p></li>
+<li><p>피험자를 다루는 의학 연구는 적절한 윤리와 과학 교육과 훈련을 받고 자격을 갖춘 사람이 진행해야 한다.</p></li>
+</ul>
+</section>
+<section id="risks-and-benefits">
+<h2><strong>Risks and Benefits</strong><a class="headerlink" href="#risks-and-benefits" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>의학적 치료와 의학적 연구를 함께 하는 경우에는 잠재적 예방효과, 진단 및 치료적 가치가 있는 경우에만 정당화된다. 또한 의사가 환자의 건강에 악영향을 주지 않을 것이라고 여길만한 적절한 근거가 있어야 한다.</p></li>
+<li><p>의학 연구로 인해 피해를 입은 피험자에게 적절한 보상과 치료가 보장되어야 한다.</p></li>
+<li><p>피험자를 다루는 모든 의학연구는 피험자와 그 집단에 대한 예측 가능한 위험요소와 피험자들, 다른 개인들, 다른 집단에게 미칠 이익을 비교하는 평가가 선행되어야 한다.</p></li>
+<li><p>피험자의 이익보다 위험이 크다는 것이 발견되거나 결과에 대한 확정적인 증거가 있을 때 의사는 진행, 수정, 종료할 것인지 평가해야 한다.</p></li>
+</ul>
+</section>
+<section id="vulnerable-groups-and-individuals">
+<h2><strong>Vulnerable Groups and Individuals</strong><a class="headerlink" href="#vulnerable-groups-and-individuals" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>시험으로 인해 추가적인 위험을 얻을 가능성이 있는 어떤 집단이나 개인을 취약 (vulnerable)이라고 한다.</p></li>
+<li><p>취약 집단이나 개인은 특정한 보호를 받아야 한다. 이러한 집단에 대한 의학 연구는 비취약 집단에 행할 수 없고 취약 집단의 건강 필요와 우선권에 신경쓰는 경우다. 또한, 취약 단체는 이러한 결과의 지식, 실행, 중재로 인한 이득을 얻을 수 있어야 한다.</p></li>
+</ul>
+</section>
+<section id="scientific-requirements-and-research-protocols">
+<h2><strong>Scientific Requirements and Research Protocols</strong><a class="headerlink" href="#scientific-requirements-and-research-protocols" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>피험자에 대한 의학 연구는 일반적으로 인정받은 과학적 원리에 기초하여야 한다. 과학적 원리는 과학 문헌과 그와 관련된 정보와 적절한 연구소와 동물 실험에 기초하여야 한다. 연구에 사용된 동물의 복지는 존중되어야 한다.</p></li>
+<li><p>사람을 다루는 의학 연구의 연구 설계와 결과는 의학 프로토콜에 명확하게 기술되어야 하며 정당화되어야 한다.</p>
+<ul>
+<li><p>Protocol : 임상 시험의 목적, 설계, 방법론, 통계적 고려사항과 조직을 다룬 문서. 프로토콜은 임상 시험의 배경과 근거를 담고 있어야 한다. ICH GCP 가이드라인은 프로토콜을 프로토콜이나 프로토콜 개정(protocol amendments)을 일컫는다.</p></li>
+</ul>
+</li>
+<li><p>프로토콜은 윤리적 고려가 포함되어야 하고 헬싱키 선언이 어떻게 다루어졌는지 기술되어야 한다. 프로토콜은 펀딩, 스폰서, 기관 제휴, 잠재적 이해상충, 피험자의 인센티브, 시험으로 인해 다친 사람의 치료와 보상에 대한 정보가 포함되어야 한다. 또한, 프로토콜은 임상시험 후의 공급에 대한 적절한 준비도 기술되어야 한다.</p></li>
+</ul>
+</section>
+<section id="research-ethics-committees">
+<h2><strong>Research Ethics Committees</strong><a class="headerlink" href="#research-ethics-committees" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>연구 프로토콜은 임상 시험이 시작하기 전에 심사숙고, 논평, 가이드라인, 승인을 위해 윤리 위원회에 제출되어야 한다. 위원회의 기능은 투명해야 하며 연구자 및 스폰서와 독립적이어야 하고 적절하게 자격을 갖춰야 한다. 적용가능한 국제적 규범과 기준뿐만 아니라 각 국가나 국가들에서의 법과 규제를 고려해야 한다. 헬싱키 선언의 피험자에 대한 보호 조항은 삭제되거나 줄어들어서는 안된다.</p></li>
+<li><p>윤리 위원회의 승인이나 숙고 없이 프로토콜의 개정은 이루어져서는 안된다. 임상 시험 종료 후에는 연구자들은 윤리 위원회에 임상 시험의 발견과 결론을 요약한 최종 보고서를 제출해야 한다.</p></li>
+</ul>
+</section>
+<section id="privacy-and-confidentiality">
+<h2><strong>Privacy and Confidentiality</strong><a class="headerlink" href="#privacy-and-confidentiality" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>피험자의 사생활을 보호하고 개인정보 비밀을 준수한다.</p></li>
+</ul>
+</section>
+<section id="informed-consent">
+<h2><strong>Informed Consent</strong><a class="headerlink" href="#informed-consent" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>임상시험 참가자들은 정보를 충분히 알고 있는 상태에서 동의(informed consent)할 수 있어야 한다.</p></li>
+<li><p>충분히 알고 있는 상태에서 동의는 다음을 의미한다. 각 피험자들은 임상 시험의 목표, 방법론, 펀딩의 출처, 이해충돌의 여지, 연구자의 기관 소속, 임상 시험의 예상되는 이익과 위험과 불편, 임상 시험 후의 공급과 그와 관련된 측면들을 적절하게 알아야 한다(informed).</p></li>
+<li><p>각 피험자들은 거부 없이 어느 시점에서나 임상 시험 참가 동의를 철회할 수 있다는 것을 알아야 한다(informed).</p></li>
+<li><p>피험자의 동의는 특히 수기로 이루어져야 하며 이것이 불가능하다면 글로 쓰여지지 않은 동의가 서류화되고 증언되어야 한다(See impartial witness)</p>
+<ul>
+<li><p>피험자나 피험자의 법정대리인이 읽을 수 없는 경우에, 충분히 알고 있는 상태에서의 동의 양식을 읽어주고 적혀진 정보를 피험자에게 제공하며 임상시험과 독립적인 사람을 impartial witness라 한다.</p></li>
+</ul>
+</li>
+<li><p>충분히 알고 있는 상태에서 동의할 수 없는 잠재적인 피험자의 경우, 의사는 법정대리인으로부터 충분히 알고 있는 상태에서의 동의를 받아야 한다.</p></li>
+<li><p>의식이 없는 환자처럼 육체적으로나 정신적으로나 동의를 할 수 없는 경우, 육체적 혹은 정신적 조건이 연구 단체에 필요한 특성인 경우에 시행될 수 있다. 이러한 상황에는 의사는 법정대리인으로부터 충분히 알고 있는 상태에서 동의를 구해야 한다. 그러한 법정대리인이 존재하지 않을 경우, 피험자가 충분히 알고 있는 상태에서 동의를 할 수 없는 이유를 프로토콜에 작성해야 하며 연구 윤리 위원회의 승인을 받아야 한다.</p></li>
+</ul>
+</section>
+<section id="use-of-placebo">
+<h2><strong>Use of Placebo</strong><a class="headerlink" href="#use-of-placebo" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>새로운 중재의 효과, 이익, 위험은 가장 좋은 중재 방법과 비교되어야 한다. 그러나 다음과 같은 예외 사항이 있다. 검증된 중재가 존재하지 않을 때 위약을 사용하거나 중재를 하지 않는 것이 허용된다. 또는 과학적이고 합당한 방법론적 이유로 가장 좋은 중재 방법보다 새로운 중재의 사용이 덜 효과적일 때 위약을 사용하거나 중재를 하지 않는 것이 필요하다. 이를 통해 새로운 중재의 효과와 안전을 검증한다. 이러한 방법론은 가장 좋은 중재 방법을 받지 않았을 때, 피험자에게 추가적인 심각한 위험이나 돌이킬 수 없는 위해가 있는 경우에는 불가능하다.</p></li>
+</ul>
+</section>
+</section>
+<section id="other-safety-guidance">
+<h1>Other Safety Guidance<a class="headerlink" href="#other-safety-guidance" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>시험 제품은 GMP (good manufacturing practice)에 따라 제작되고 다루어지고 저장되어야 한다.</p></li>
+<li><p>피험자를 식별할 수 있는 정보는 보호되어야 한다.</p></li>
+</ul>
+</section>
+<section id="the-structure-of-clinical-trial">
+<h1>The Structure of Clinical Trial<a class="headerlink" href="#the-structure-of-clinical-trial" title="Permalink to this heading">#</a></h1>
+<section id="irb-institutional-review-board">
+<h2>IRB (Institutional Review Board)<a class="headerlink" href="#irb-institutional-review-board" title="Permalink to this heading">#</a></h2>
+<p>An independent body constituted of medical, scientific, and non-scientific members, whose responsibility is to ensure the protection of the rights, safety and well-being of human subjects involved in a trial by, among other things, reviewing, approving, and providing continuing review of trial protocol and amendments and of the methods and material to be used in obtaining and documenting informed consent of the trial subjects.</p>
+</section>
+<section id="iec-independent-ethics-committee">
+<h2>IEC (Independent Ethics Committee)<a class="headerlink" href="#iec-independent-ethics-committee" title="Permalink to this heading">#</a></h2>
+<p>An independent body (a review board or a committee, institutional, regional, national, or supranational), constituted of medical professionals and non-medical members, whose responsibility it is to ensure the protection of the rights, safety and well-being of human subjects involved in a trial and to provide public assurance of that protection, by, among other things, reviewing and approving / providing favourable opinion on, the trial protocol, the suitability of the investigator(s), facilities, and the methods and material to be used in obtaining and documenting informed consent of the trial subjects.</p>
+</section>
+<section id="irb-iec">
+<h2>IRB / IEC<a class="headerlink" href="#irb-iec" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p><strong>Trial protocol(s) / amendment(s)</strong></p></li>
+<li><p><strong>Review a proposed clinical trial</strong></p>
+<ul class="simple">
+<li><p>investigator의 자격 검토</p></li>
+<li><p>non-therapeutic trial is to be carried out with the consent of the subject’s legally acceptable representative</p></li>
+<li><p>Where the protocol indicates that prior consent of the trial subject or the subject’s legally acceptable representative is not possible</p></li>
+<li><p>The IRB/IEC should review both the amount and method of payment to subjects to assure that neither presents problems of coercion or undue influence on the trial subjects.</p></li>
+</ul>
+</li>
+<li><p><strong>Composition,</strong> <strong>Functions, and Operations</strong></p>
+<ul class="simple">
+<li><p>a) At least five members. 
+b)  At least one member whose primary area of interest is in a nonscientific area. 
+c)  At least one member who is independent of the institution/trial site.</p></li>
+<li><p>The IRB/IEC should perform its functions according to written operating procedures, should maintain written records of its activities and minutes of its meetings, and should comply with GCP and with the applicable regulatory requirement(s).</p></li>
+</ul>
+</li>
+<li><p><strong>Procedures</strong></p>
+<ul>
+<li><p>Specifying that the investigator should promptly report to the IRB/IEC:</p>
+<p>a) Deviations from, or changes of, the protocol to eliminate immediate hazards to the trial subjects (see 3.3.7, 4.5.2, 4.5.4).</p>
+<p>b) Changes increasing the risk to subjects and/or affecting significantly the conduct of the trial (see 4.10.2).</p>
+<p>c) All adverse drug reactions (ADRs) that are both serious and unexpected.</p>
+<p>d) New information that may affect adversely the safety of the subjects or the conduct of the trial.</p>
+</li>
+<li><p>Ensuring that the IRB/IEC promptly notify in writing the investigator/institution concerning:</p>
+<p>a) Its trial-related decisions/opinions.</p>
+<p>b) The reasons for its decisions/opinions.</p>
+<p>c) Procedures for appeal of its decisions/opinions.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Records</strong></p>
+<ul>
+<li><p>The IRB/IEC should retain all relevant records (e.g., written procedures, membership lists, lists of occupations/affiliations of members, submitted documents, minutes of meetings, and correspondence) for a period of at least 3 years after completion of the trial and make them available upon request from the regulatory authority(ies).</p>
+<p>The IRB/IEC may be asked by investigators, sponsors or regulatory authorities to provide its written procedures and membership lists.</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="investigator">
+<h2>Investigator<a class="headerlink" href="#investigator" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p><strong>Investigator’s Qualifications and Agreements</strong></p>
+<ul class="simple">
+<li><p>The investigator(s) should be qualified by education, training, and experience to assume responsibility for the proper conduct of the trial</p></li>
+<li><p>The investigator should be thoroughly familiar with the appropriate use of the investigational product(s), as described in the protocol,</p></li>
+<li><p>The investigator should ensure that all persons assisting with the trial are adequately informed about the protocol, the investigational product(s), and their trial-related duties and functions.</p></li>
+<li><p>A qualified physician (or dentist, when appropriate), who is an investigator or a sub-investigator for the trial, should be responsible for all trial-related medical (or dental) decisions.</p></li>
+</ul>
+</li>
+<li><p>The investigator/institution should ensure that adequate medical care is provided to a subject for any adverse events</p></li>
+<li><p>The investigator/institution should provide the IRB/IEC with a current copy of the Investigator’s Brochure.</p>
+<ul class="simple">
+<li><p>Investigator’s Brochure : A compilation of the clinical and nonclinical data on the investigational product(s) which is relevant to the study of the investigational product(s) in human subjects</p></li>
+</ul>
+</li>
+<li><p>The investigator should not implement any deviation from, or changes of the protocol without agreement by the sponsor and prior review and documented approval/favourable opinion from the IRB/IEC of an amendment, except where necessary to eliminate an immediate hazard(s) to trial subjects, or when the change(s) involves only logistical or administrative aspects of the trial (e.g., change in monitor(s), change of telephone number(s)).</p></li>
+<li><p>the implemented deviation or change, the reasons for it, and, if appropriate, the proposed protocol amendment(s) should be submitted:</p>
+<p>a) to the IRB/IEC for review and approval/favourable opinion,</p>
+<p>b) to the sponsor for agreement and, if required,</p>
+<p>c) to the regulatory authority(ies).</p>
+</li>
+<li><p>Responsibility for investigational product(s) accountability at the trial site(s) rests with the investigator/institution.</p>
+<ul class="simple">
+<li><p>should maintain records of the product’s delivery to the trial site, the inventory at the site, the use by each subject, and the return to the sponsor or alternative disposition of unused product(s). These records should include dates, quantities, batch/serial numbers, expiration dates (if applicable), and the unique code numbers assigned to the investigational product(s) and trial subjects. Investigators should maintain records that document adequately that the subjects were provided the doses specified by the protocol and reconcile all investigational product(s) received from the sponsor.</p></li>
+<li><p>The investigator, or a person designated by the investigator/institution, should explain the correct use of the investigational product(s) to each subject and should check, at intervals appropriate for the trial, that each subject is following the instructions properly.</p></li>
+</ul>
+</li>
+<li><p>The investigator should follow the trial’s randomization procedures, if any, and should ensure that the code is broken only in accordance with the protocol. If the trial is blinded, the investigator should promptly document and explain to the sponsor any premature unblinding (e.g., accidental unblinding, unblinding due to a serious adverse event) of the investigational product(s).</p>
+<ul class="simple">
+<li><p>Informed consent를 받는 주체</p>
+<ul>
+<li><p>That the monitor(s), the auditor(s), the IRB/IEC, and the regulatory authority(ies) will be granted direct access to the subject’s original medical records for verification of clinical trial procedures and/or data, without violating the confidentiality of the subject, to the extent permitted by the applicable laws and regulations and that, by signing a written informed consent form, the subject or the subject’s legally acceptable representative is authorizing such access.</p></li>
+<li><p>That records identifying the subject will be kept confidential and, to the extent permitted by the applicable laws and/or regulations, will not be made publicly available. If the results of the trial are published, the subject’s identity will remain confidential.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Case Report Form (CRF) : A printed, optical, or electronic document designed to record all of the protocol required information to be reported to the sponsor on each trial subject.</p>
+<ul class="simple">
+<li><p>The investigator/institution should maintain adequate and accurate source documents and trial records that include all pertinent observations on each of the site’s trial subjects. Source data should be attributable, legible, contemporaneous, original, accurate, and complete. Changes to source data should be traceable, should not obscure the original entry, and should be explained if necessary</p></li>
+<li><p>Any change or correction to a CRF should be dated, initialed, and explained (if necessary) and should not obscure the original entry (i.e. an audit trail should be maintained); this applies to both written and electronic changes or corrections (see 5.18.4 (n)). Sponsors should provide guidance to investigators and/or the investigators’ designated representatives on making such corrections. Sponsors should have written procedures to assure that changes or corrections in CRFs made by sponsor’s designated representatives are documented, are necessary, and are endorsed by the investigator. The investigator should retain records of the changes and corrections.</p></li>
+</ul>
+</li>
+<li><p>Essential documents should be retained until at least 2 years after the last approval of a marketing application in an ICH region and until there are no pending or contemplated marketing applications in an ICH region or at least 2 years have elapsed since the formal discontinuation of clinical development of the investigational product.</p></li>
+<li><p>The investigator should submit written summaries of the trial status to the IRB/IEC annually, or more frequently, if requested by the IRB/IEC.</p></li>
+<li><p>All serious adverse events (SAEs) should be reported immediately to the sponsor except for those SAEs that the protocol or other document (e.g., Investigator’s Brochure) identifies as not needing immediate reporting.</p>
+<ul class="simple">
+<li><p>should identify subjects by unique code numbers assigned to the trial subjects</p></li>
+<li><p>Adverse events and/or laboratory abnormalities identified in the protocol as critical to safety evaluations should be reported to the sponsor according to the reporting requirements and within the time periods specified by the sponsor in the protocol.</p></li>
+</ul>
+</li>
+<li><p>If the trial is prematurely terminated or suspended for any reason, the investigator/institution should promptly inform the trial subjects, should assure appropriate therapy and follow-up for the subjects, and, where required by the applicable regulatory requirement(s), should inform the regulatory authority(ies). In addition:</p></li>
+<li><p>Investigator, Sponsor, IRB / IEC terminates or suspends a trial : Investigator notifies Institution</p>
+<p>Investigator / Institution should notify Sponsor, IRB / IEC</p>
+</li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Let Biostat Guidance Guide Us (LBGGU)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="GCP_part2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Good Clinical Practice (GCP) part 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Good Clinical Practice (GCP) part 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#declaration-of-helsinki">Declaration of Helsinki</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-principles"><strong>GENERAL PRINCIPLES</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks-and-benefits"><strong>Risks and Benefits</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vulnerable-groups-and-individuals"><strong>Vulnerable Groups and Individuals</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-requirements-and-research-protocols"><strong>Scientific Requirements and Research Protocols</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#research-ethics-committees"><strong>Research Ethics Committees</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacy-and-confidentiality"><strong>Privacy and Confidentiality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#informed-consent"><strong>Informed Consent</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-placebo"><strong>Use of Placebo</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#other-safety-guidance">Other Safety Guidance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-structure-of-clinical-trial">The Structure of Clinical Trial</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irb-institutional-review-board">IRB (Institutional Review Board)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iec-independent-ethics-committee">IEC (Independent Ethics Committee)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#irb-iec">IRB / IEC</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#investigator">Investigator</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,703 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2 &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/E9R1_part2';</script>
+    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 1" href="E9R1_part1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PseudoLab_logo.png" class="logo__image only-light" alt="PseudoLab [Let-Biostat-Guidance-Guide-Us] - Home"/>
+    <script>document.write(`<img src="../_static/PseudoLab_logo.png" class="logo__image only-dark" alt="PseudoLab [Let-Biostat-Guidance-Guide-Us] - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Let Biostat Guidance Guide Us (LBGGU)
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="GCP_part1.html">Good Clinical Practice (GCP) part 1</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="GCP_part2.html">Good Clinical Practice (GCP) part 2</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part1.html">Guideline for Industry E9 Statistical Principles for Clinical Trials part 1</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9_part2.html">Guideline for Industry E9 Statistical Principles for Clinical Trials part 2</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Switching.html">Points to Consider on Switching between Superiority and Non-inferiority</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Delta_part1.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomized controlled trial part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Delta_part2.html">DELTA2 guidance on choosing the target difference and undertaking and reporting the sample size calculation for a randomised controlled trial part2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part1.html">Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostic_part2.html">Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff part 2</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="E9R1_part1.html">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 1</a></li>
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Pseudo-Lab/Let-Biostat-Guidance-Guide-Us/issues/new?title=Issue%20on%20page%20%2Fdocs/E9R1_part2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/E9R1_part2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#impact-on-trial-design-and-conduct">4. IMPACT ON TRIAL DESIGN AND CONDUCT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#impact-on-trial-analysis">5. IMPACT ON TRIAL ANALYSIS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-main-estimation">A. Main Estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-sensitivity-analysis">B. Sensitivity Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-supplementary-analysis">C. Supplementary Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#documenting-estimands-and-sensitivity-analysis">6. DOCUMENTING ESTIMANDS AND SENSITIVITY ANALYSIS</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="e9-r1-statistical-principles-for-clinical-trials-addendum-estimands-and-sensitivity-analysis-in-clinical-trials-part-2">
+<h1>E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2<a class="headerlink" href="#e9-r1-statistical-principles-for-clinical-trials-addendum-estimands-and-sensitivity-analysis-in-clinical-trials-part-2" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="impact-on-trial-design-and-conduct">
+<h1>4. IMPACT ON TRIAL DESIGN AND CONDUCT<a class="headerlink" href="#impact-on-trial-design-and-conduct" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p><strong>임상시험설계와 Estimand</strong></p>
+<ul>
+<li><p>한 Estimand에 적합한 설계가 다른 Estimands에는 적합하지 않을 수 있으므로, 임상시험의 설계는 그 시험의 목표를 반영하는 Estimand를 기반으로 해야함</p></li>
+<li><p>Estimand에 대한 명확한 정의가 필요, 시험 디자인에 대한 정보 제공</p>
+<ul>
+<li><p>포함 및 제외 기준</p></li>
+<li><p>프로토콜에 따른 허용/금지된 치료 및 약물</p></li>
+<li><p>데이터 수집 방법</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>데이터 수집</strong></p>
+<ul>
+<li><p>항상 모든 데이터를 수집하는 것은 불가능</p>
+<ul>
+<li><p>참여자를 강제로 시험할 수 없음</p></li>
+<li><p>일부 임상 시험은 설계상 불가피하게 데이터가 누락될 수 있음</p></li>
+<li><p>치료 중단, 치료 변경 또는 추가 약물 사용과 같은 ICE 이후에도 데이터가 수집될 수 있음 (즉, 환자가 치료를 중단했더라도 환자의 건강상태를 추적할 수 있음, 항상 관련이 있거나 유용하지는 않음)</p></li>
+<li><p>사망과 같은 경우, 사건 후 변수를 측정할 수 없으나 이는 누락으로 간주해서는 안됨</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>누락된 데이터</strong></p>
+<ul>
+<li><p>누락된 데이터는 통계적 추론에 문제를 일으킴</p>
+<ul>
+<li><p>분석의 타당성 하락</p></li>
+<li><p>누락된 데이터의 비율에 따라 견고성 하락될 수 있음</p></li>
+</ul>
+</li>
+<li><p>“왜 데이터가 누락되었는지”에 대한 이유를 미리 계획적으로 수집하면, 분석의 정확성을 높이고 누락된 데이터에 대한 보다 타당한 해석이 가능</p>
+<ul>
+<li><p>연락 두절로 인한 데이터 누락 : “추적불가”로 간주될 수 있지만 원인이 치료의 효능 부족으로 인한 치료 중단이라면 구체적인 이유가 기록될 수 있음</p></li>
+<li><p>ICE로 분류되는 경우, ICE를 고려한 전략을 구성할 수 있음</p></li>
+</ul>
+</li>
+<li><p>누락되지 않게 조치할 수 도 있음</p>
+<ul>
+<li><p>ICE를 줄이거나 피하려는 조치는 연구의 외적 타당도를 감소시킴</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>임상 시험의 기본 요소</strong></p>
+<ul>
+<li><p>무작위 배정과 눈가림 방법</p></li>
+<li><p>특정 추정량은 <strong>Run-in or Enrichment Designs, Randomized Withdrawal Designs, Titration Designs</strong>과 같은 특정한 임상 시험 설계를 필요로 함</p>
+<ul>
+<li><p>예를 들어, “실행 전(run-in) 기간”을 이용하여 특정 치료를 잘 받아들이는 대상군을 미리 식별한 후, 치료군과 대조군 사이에 무작위 배정하는 것이 유용할 수 있음</p></li>
+</ul>
+</li>
+<li><p>실행 전(run-in) 기간이 목표 대상군을 정확하게 식별하는지, 그리고 후속 시험 디자인이 목표 치료 효과를 잘 추정하는지 검토해야함, 이 검토에 따라 특정 시험 방법이 제한될 수 있음</p></li>
+</ul>
+</li>
+<li><p><strong>표본 수</strong></p>
+<ul>
+<li><p>특정한 치료 효과에 대한 정확한 정의에 기반하여 표본 수를 계산해야함</p></li>
+<li><p>이전 연구를 참조할 땐, 해당 연구가 다른 estimand를 기반으로 한 치료 효과를 보고했는지 주의 깊게 확인 할 필요가 있음</p></li>
+<li><p>모든 대상자의 정보가 분석에 사용되며 ICE도 고려된 상태에서 표본 크기를 계산한다면 참가자의 중도 탈락률을 고려하여 표본 수를 늘릴 필요는 없음</p></li>
+</ul>
+</li>
+<li><p><strong>임상 시험 간 데이터 요약</strong></p>
+<ul>
+<li><p>임상 시험 간의 데이터를 요약할 때, 관심 변수에 대한 일관된 정의가 필요</p></li>
+<li><p>여러 시험의 데이터를 임의로 비교하거나 통합하는 것은 잘못된 해석을 초래할 수 있으므로 각 통계 분석에서 대상이 되는 Estimand를 명확히 지정해야 함</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="impact-on-trial-analysis">
+<h1>5. IMPACT ON TRIAL ANALYSIS<a class="headerlink" href="#impact-on-trial-analysis" title="Permalink to this heading">#</a></h1>
+<section id="a-main-estimation">
+<h2>A. Main Estimation<a class="headerlink" href="#a-main-estimation" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>모든 분석 방법은 가정에 의존하며, 동일한 Esimand를 다룸에도 불구하고 서로 다른 가정에 의존할 수 있다는 점에 유의</p></li>
+<li><p>모든 가정은 명시적이고 타당하게 기술되어야 하며 민감도 분석을 통해 결과의 타당성을 평가</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Treatment policy strategy</strong>에서 ICE 이후에도 대상자가 계속 추적되면 데이터 누락 문제는 상대적으로 작을 것</p></li>
+<li><p>ICE 이후에 관찰이 중단되면, 관찰이 중단된 대상자의 결과가 계속 치료받는 대상자의 결과와 비슷하다는 가정이 타당하지 않을 수 있음 → 누락된 데이터를 처리하는 적절한 방법을 찾아야하며, 민감도 분석을 통해 이를 확인해야함</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Hypothetical strategy</strong>의 목적은 특정 개입의 잠재적 영향을 이해하고 이를 연구에서 관찰된 실제 결과와 비교하는 것</p></li>
+<li><p>실제로 관찰된 것과 다른 결과를 포함하므로 강력한 가정 하에서만 가능한 분석</p></li>
+<li><p>유용한 도구가 될 수 있지만 분석의 한계를 인식하고 결과를 주의깊게 해석하는 것이 중요</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Composite variable strategy</strong>은 ICE를 하나의 outcome으로 고려하므로 ICE 발생 후의 데이터에 대한 통계적 가정을 필요로 하지 않음</p></li>
+<li><p>가정보다는 치료효과의 해석에 주의해야함 (ex. 사망 vs 부작용으로 인한 치료중단)</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>While on treatment strategy</strong>을 기반으로하는 Estimand는 outcome이 ICE까지 수집된 경우 추정가능</p></li>
+<li><p>치료 효과의 정확한 해석을 위해 임상적 특성을 고려 (ex. 치료 중단 → 치료가 환자의 상태를 개선시킬 수 있지만, 동시에 치료는 부작용으로 인해 치료 기간 단축을 유발하거나 상태 악화로 치료 기간을 연장시킬 수 있음을 고려해야함)</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><strong>Principal stratum strategy</strong>은 일반적으로 강력한 가정이 필요</p></li>
+<li><p>일부 계층화 방법들은 대상자의 기본 특성을 토대로 계층화하여 가정하는데, 가정의 정확성이 항상 보장되는 것은 아님</p></li>
+<li><p>ICE가 치료와 관련이 없다고 가정하더라도, ICE가 없는 치료군의 대상자와 ICE가 없는 대조군의 대상자를 비교하는 것과 같은 단순화된 방법 또한 정당화하기 어려움</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>관련이 있는 데이터에 대해 수집을 실패한 것과 관련이 없는 데이터에 대해 수집하지 않은 것을 구분해야함</p></li>
+<li><p>누락된 경우, 분석에서 누락된 데이터를 처리하기 위한 가정이 필요, 이러한 가정들은 임상적으로 타당해야하며 Estimand를 정의할 때 사용된 방법을 따라야함</p></li>
+<li><p>누락된 데이터를 처리하는 한가지 방법 : 유사한 다른 대상자의 공변량을 사용하는 것</p></li>
+</ul>
+</section>
+<section id="b-sensitivity-analysis">
+<h2>B. Sensitivity Analysis<a class="headerlink" href="#b-sensitivity-analysis" title="Permalink to this heading">#</a></h2>
+<p><strong>Role of Sensitivity Analysis</strong></p>
+<ul class="simple">
+<li><p>민감도 분석은 특정 추정치를 기반으로 한 결론이 얼마나 견고한지를 평가</p></li>
+<li><p>규제 결정(regulatory decision-making)과 라벨링을 위해 모든 추정치의 추정기에 대한 민감도 분석을 계획해야함</p></li>
+<li><p>주요 추정기를 뒷받침 하는 통계적 가정은 꼭 문서화</p></li>
+<li><p>추정치가 해당 가정에서 편차에 견고한지 평가하기 위해, 같은 추정치를 중점으로 한 개 이상의 분석이 미리 지정되어야함</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Choice of Sensitivity Analysis</strong></p>
+<ul class="simple">
+<li><p>분석의 여러 가정을 동시에 변경하면 어느 부분 때문에 결과가 달라졌는지 명확히 알기 어려움 → 각 분석에서 어떤 가정이 변경됐는지 명시하는 것이 중요</p></li>
+<li><p>특정 추정치에 관련된 누락된 데이터와 추정치에 관련이 없는 데이터를 구별함으로써 민감도 분석에서 어떤 가정을 검토해야할지 결정할 수 있음</p></li>
+</ul>
+</section>
+<section id="c-supplementary-analysis">
+<h2>C. Supplementary Analysis<a class="headerlink" href="#c-supplementary-analysis" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Supplementary analysis(보충 분석)은 민감도 분석과 구별되며, 데이터를 완전하게 조사하고 이해하기 위해 수행</p></li>
+<li><p>평가에서 민감도 분석보다 우선순위가 낮음</p></li>
+<li><p>FAS와 PPS 기반의 일관된 결과는 시험 결과에 대한 신뢰도를 높이므로 이들을 기반으로 분석 계획을 수립하여 이들 간의 차이를 논의하고 해석하는 것을 권장</p></li>
+<li><p>하지만 PPS를 기반으로 한 결과는 프로토콜을 잘 따른 대상자만을 고려하는 특성상 심각한 편향이 있을 수 있음</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="documenting-estimands-and-sensitivity-analysis">
+<h1>6. DOCUMENTING ESTIMANDS AND SENSITIVITY ANALYSIS<a class="headerlink" href="#documenting-estimands-and-sensitivity-analysis" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>임상시험을 계획할 때 주요 목표와 부차적 목표에 따라 어떤 결과를 추정할지(estimand)와 어떻게 추정할지(estimator)를 미리 정의하고, 그 가정이 타당한지 검증하는 민감도 분석을 포함해야 함.</p></li>
+<li><p>Primary Estimand가 정해지면 이를 기반으로 임상시험의 디자인, 실행 및 분석 방식이 정해지는데 모든 고려사항을 연구 프로토콜에 문서화하는 것이 중요</p></li>
+<li><p>주요 분석, 민감도 분석 및 보충분석의 결과를 체계적으로 보고 (분석이 사전에 지정되었는지, 시험이 눈가림 상태에서 도입되었는지, 사후에 수행되었는지, ICE의 수와 시기)</p></li>
+<li><p>시험중에 Estimand를 변경하는 것은 문제, 신뢰도 하락</p></li>
+<li><p>Estimand에 변화가 있으면 일반적으로 프로토콜을 수정하여 변화를 반영해야함</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="E9R1_part1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 1</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">E9(R1) STATISTICAL PRINCIPLES FOR CLINICAL TRIALS: ADDENDUM: ESTIMANDS AND SENSITIVITY ANALYSIS IN CLINICAL TRIALS part 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#impact-on-trial-design-and-conduct">4. IMPACT ON TRIAL DESIGN AND CONDUCT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#impact-on-trial-analysis">5. IMPACT ON TRIAL ANALYSIS</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-main-estimation">A. Main Estimation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-sensitivity-analysis">B. Sensitivity Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-supplementary-analysis">C. Supplementary Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#documenting-estimands-and-sensitivity-analysis">6. DOCUMENTING ESTIMANDS AND SENSITIVITY ANALYSIS</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By PseudoLab
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
