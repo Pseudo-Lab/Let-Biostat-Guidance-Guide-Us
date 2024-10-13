@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Good Clinical Practice (GCP) part 1 &#8212; PseudoLab [Let-Biostat-Guidance-Guide-Us]</title>
   
@@ -15,55 +14,51 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/GCP_part1';</script>
-    <link rel="shortcut icon" href="../_static/PseudoLab_logo.png"/>
+    <link rel="icon" href="../_static/PseudoLab_logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Good Clinical Practice (GCP) part 2" href="GCP_part2.html" />
@@ -77,28 +72,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -120,12 +110,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,6 +139,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -159,7 +159,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -226,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -235,14 +246,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -367,10 +378,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -378,14 +389,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -436,19 +447,19 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="good-clinical-practice-gcp-part-1">
-<h1>Good Clinical Practice (GCP) part 1<a class="headerlink" href="#good-clinical-practice-gcp-part-1" title="Permalink to this heading">#</a></h1>
+<h1>Good Clinical Practice (GCP) part 1<a class="headerlink" href="#good-clinical-practice-gcp-part-1" title="Link to this heading">#</a></h1>
 <p>GCP의 목적은 두 가지이다. 첫째는 시험자를 보호하는 것 (human subject protection)이고, 신뢰할 수 있는 임상시험 결과(reliability of trial results)를 만드는 것이다 (2.13.).</p>
 <p><img alt="" src="../_images/GCP.PNG" />
 <img alt="" src="../_images/Sponsor.PNG" /></p>
 <p>첫째 시험자를 보호하는 것은 <a class="reference external" href="https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/">헬싱키 선언</a>에 기초한다. 헬싱키 선언에 나타난 내용 중 GCP와 관련된 내용을 위주로 작성하였다.</p>
 </section>
 <section id="declaration-of-helsinki">
-<h1>Declaration of Helsinki<a class="headerlink" href="#declaration-of-helsinki" title="Permalink to this heading">#</a></h1>
+<h1>Declaration of Helsinki<a class="headerlink" href="#declaration-of-helsinki" title="Link to this heading">#</a></h1>
 <section id="general-principles">
-<h2><strong>GENERAL PRINCIPLES</strong><a class="headerlink" href="#general-principles" title="Permalink to this heading">#</a></h2>
+<h2><strong>GENERAL PRINCIPLES</strong><a class="headerlink" href="#general-principles" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>환자의 건강을 최우선으로 생각한다.</p></li>
 <li><p>의학 연구는 피험자를 존중하고 그들의 건강과 권리를 지키는 가운데 이루어져야 한다.</p></li>
@@ -458,7 +469,7 @@ document.write(`
 </ul>
 </section>
 <section id="risks-and-benefits">
-<h2><strong>Risks and Benefits</strong><a class="headerlink" href="#risks-and-benefits" title="Permalink to this heading">#</a></h2>
+<h2><strong>Risks and Benefits</strong><a class="headerlink" href="#risks-and-benefits" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>의학적 치료와 의학적 연구를 함께 하는 경우에는 잠재적 예방효과, 진단 및 치료적 가치가 있는 경우에만 정당화된다. 또한 의사가 환자의 건강에 악영향을 주지 않을 것이라고 여길만한 적절한 근거가 있어야 한다.</p></li>
 <li><p>의학 연구로 인해 피해를 입은 피험자에게 적절한 보상과 치료가 보장되어야 한다.</p></li>
@@ -467,14 +478,14 @@ document.write(`
 </ul>
 </section>
 <section id="vulnerable-groups-and-individuals">
-<h2><strong>Vulnerable Groups and Individuals</strong><a class="headerlink" href="#vulnerable-groups-and-individuals" title="Permalink to this heading">#</a></h2>
+<h2><strong>Vulnerable Groups and Individuals</strong><a class="headerlink" href="#vulnerable-groups-and-individuals" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>시험으로 인해 추가적인 위험을 얻을 가능성이 있는 어떤 집단이나 개인을 취약 (vulnerable)이라고 한다.</p></li>
 <li><p>취약 집단이나 개인은 특정한 보호를 받아야 한다. 이러한 집단에 대한 의학 연구는 비취약 집단에 행할 수 없고 취약 집단의 건강 필요와 우선권에 신경쓰는 경우다. 또한, 취약 단체는 이러한 결과의 지식, 실행, 중재로 인한 이득을 얻을 수 있어야 한다.</p></li>
 </ul>
 </section>
 <section id="scientific-requirements-and-research-protocols">
-<h2><strong>Scientific Requirements and Research Protocols</strong><a class="headerlink" href="#scientific-requirements-and-research-protocols" title="Permalink to this heading">#</a></h2>
+<h2><strong>Scientific Requirements and Research Protocols</strong><a class="headerlink" href="#scientific-requirements-and-research-protocols" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>피험자에 대한 의학 연구는 일반적으로 인정받은 과학적 원리에 기초하여야 한다. 과학적 원리는 과학 문헌과 그와 관련된 정보와 적절한 연구소와 동물 실험에 기초하여야 한다. 연구에 사용된 동물의 복지는 존중되어야 한다.</p></li>
 <li><p>사람을 다루는 의학 연구의 연구 설계와 결과는 의학 프로토콜에 명확하게 기술되어야 하며 정당화되어야 한다.</p>
@@ -486,20 +497,20 @@ document.write(`
 </ul>
 </section>
 <section id="research-ethics-committees">
-<h2><strong>Research Ethics Committees</strong><a class="headerlink" href="#research-ethics-committees" title="Permalink to this heading">#</a></h2>
+<h2><strong>Research Ethics Committees</strong><a class="headerlink" href="#research-ethics-committees" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>연구 프로토콜은 임상 시험이 시작하기 전에 심사숙고, 논평, 가이드라인, 승인을 위해 윤리 위원회에 제출되어야 한다. 위원회의 기능은 투명해야 하며 연구자 및 스폰서와 독립적이어야 하고 적절하게 자격을 갖춰야 한다. 적용가능한 국제적 규범과 기준뿐만 아니라 각 국가나 국가들에서의 법과 규제를 고려해야 한다. 헬싱키 선언의 피험자에 대한 보호 조항은 삭제되거나 줄어들어서는 안된다.</p></li>
 <li><p>윤리 위원회의 승인이나 숙고 없이 프로토콜의 개정은 이루어져서는 안된다. 임상 시험 종료 후에는 연구자들은 윤리 위원회에 임상 시험의 발견과 결론을 요약한 최종 보고서를 제출해야 한다.</p></li>
 </ul>
 </section>
 <section id="privacy-and-confidentiality">
-<h2><strong>Privacy and Confidentiality</strong><a class="headerlink" href="#privacy-and-confidentiality" title="Permalink to this heading">#</a></h2>
+<h2><strong>Privacy and Confidentiality</strong><a class="headerlink" href="#privacy-and-confidentiality" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>피험자의 사생활을 보호하고 개인정보 비밀을 준수한다.</p></li>
 </ul>
 </section>
 <section id="informed-consent">
-<h2><strong>Informed Consent</strong><a class="headerlink" href="#informed-consent" title="Permalink to this heading">#</a></h2>
+<h2><strong>Informed Consent</strong><a class="headerlink" href="#informed-consent" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>임상시험 참가자들은 정보를 충분히 알고 있는 상태에서 동의(informed consent)할 수 있어야 한다.</p></li>
 <li><p>충분히 알고 있는 상태에서 동의는 다음을 의미한다. 각 피험자들은 임상 시험의 목표, 방법론, 펀딩의 출처, 이해충돌의 여지, 연구자의 기관 소속, 임상 시험의 예상되는 이익과 위험과 불편, 임상 시험 후의 공급과 그와 관련된 측면들을 적절하게 알아야 한다(informed).</p></li>
@@ -514,31 +525,31 @@ document.write(`
 </ul>
 </section>
 <section id="use-of-placebo">
-<h2><strong>Use of Placebo</strong><a class="headerlink" href="#use-of-placebo" title="Permalink to this heading">#</a></h2>
+<h2><strong>Use of Placebo</strong><a class="headerlink" href="#use-of-placebo" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>새로운 중재의 효과, 이익, 위험은 가장 좋은 중재 방법과 비교되어야 한다. 그러나 다음과 같은 예외 사항이 있다. 검증된 중재가 존재하지 않을 때 위약을 사용하거나 중재를 하지 않는 것이 허용된다. 또는 과학적이고 합당한 방법론적 이유로 가장 좋은 중재 방법보다 새로운 중재의 사용이 덜 효과적일 때 위약을 사용하거나 중재를 하지 않는 것이 필요하다. 이를 통해 새로운 중재의 효과와 안전을 검증한다. 이러한 방법론은 가장 좋은 중재 방법을 받지 않았을 때, 피험자에게 추가적인 심각한 위험이나 돌이킬 수 없는 위해가 있는 경우에는 불가능하다.</p></li>
 </ul>
 </section>
 </section>
 <section id="other-safety-guidance">
-<h1>Other Safety Guidance<a class="headerlink" href="#other-safety-guidance" title="Permalink to this heading">#</a></h1>
+<h1>Other Safety Guidance<a class="headerlink" href="#other-safety-guidance" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>시험 제품은 GMP (good manufacturing practice)에 따라 제작되고 다루어지고 저장되어야 한다.</p></li>
 <li><p>피험자를 식별할 수 있는 정보는 보호되어야 한다.</p></li>
 </ul>
 </section>
 <section id="the-structure-of-clinical-trial">
-<h1>The Structure of Clinical Trial<a class="headerlink" href="#the-structure-of-clinical-trial" title="Permalink to this heading">#</a></h1>
+<h1>The Structure of Clinical Trial<a class="headerlink" href="#the-structure-of-clinical-trial" title="Link to this heading">#</a></h1>
 <section id="irb-institutional-review-board">
-<h2>IRB (Institutional Review Board)<a class="headerlink" href="#irb-institutional-review-board" title="Permalink to this heading">#</a></h2>
+<h2>IRB (Institutional Review Board)<a class="headerlink" href="#irb-institutional-review-board" title="Link to this heading">#</a></h2>
 <p>An independent body constituted of medical, scientific, and non-scientific members, whose responsibility is to ensure the protection of the rights, safety and well-being of human subjects involved in a trial by, among other things, reviewing, approving, and providing continuing review of trial protocol and amendments and of the methods and material to be used in obtaining and documenting informed consent of the trial subjects.</p>
 </section>
 <section id="iec-independent-ethics-committee">
-<h2>IEC (Independent Ethics Committee)<a class="headerlink" href="#iec-independent-ethics-committee" title="Permalink to this heading">#</a></h2>
+<h2>IEC (Independent Ethics Committee)<a class="headerlink" href="#iec-independent-ethics-committee" title="Link to this heading">#</a></h2>
 <p>An independent body (a review board or a committee, institutional, regional, national, or supranational), constituted of medical professionals and non-medical members, whose responsibility it is to ensure the protection of the rights, safety and well-being of human subjects involved in a trial and to provide public assurance of that protection, by, among other things, reviewing and approving / providing favourable opinion on, the trial protocol, the suitability of the investigator(s), facilities, and the methods and material to be used in obtaining and documenting informed consent of the trial subjects.</p>
 </section>
 <section id="irb-iec">
-<h2>IRB / IEC<a class="headerlink" href="#irb-iec" title="Permalink to this heading">#</a></h2>
+<h2>IRB / IEC<a class="headerlink" href="#irb-iec" title="Link to this heading">#</a></h2>
 <ul>
 <li><p><strong>Trial protocol(s) / amendment(s)</strong></p></li>
 <li><p><strong>Review a proposed clinical trial</strong></p>
@@ -582,7 +593,7 @@ c)  At least one member who is independent of the institution/trial site.</p></l
 </ul>
 </section>
 <section id="investigator">
-<h2>Investigator<a class="headerlink" href="#investigator" title="Permalink to this heading">#</a></h2>
+<h2>Investigator<a class="headerlink" href="#investigator" title="Link to this heading">#</a></h2>
 <ul>
 <li><p><strong>Investigator’s Qualifications and Agreements</strong></p>
 <ul class="simple">
@@ -669,7 +680,7 @@ c)  At least one member who is independent of the institution/trial site.</p></l
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -698,6 +709,7 @@ c)  At least one member who is independent of the institution/trial site.</p></l
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -750,7 +762,7 @@ By PseudoLab
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -774,8 +786,8 @@ By PseudoLab
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
